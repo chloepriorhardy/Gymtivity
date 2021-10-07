@@ -1,0 +1,54 @@
+{% extends './base.html' %}
+{% load static %}
+{# TODO: i18n #}
+{% block title %}Sign In{% endblock %}
+{% block heading %}Sign in to your account{% endblock %}
+ 
+{% block navbar_text %}
+<span class="d-none d-md-inline-block">Don't have an account?</span>
+<a href="{% url 'users:register' %}">Sign up</a>
+{% endblock %}
+ 
+{% block content %}
+ <form method="post" class="needs-validation" novalidate>
+   {% csrf_token %}
+  
+   <div class="mb-2">
+     <label class="form-label" for="{{ form.username.id_for_label }}">{{ form.username.label }}<sup>*</sup></label>
+     <input
+       class="form-control form-control-lg {% if form.username.errors %}is-invalid{% endif %}"
+       type="email"
+       name="username"
+       id="{{ form.username.id_for_label }}"
+       placeholder="Enter your email address"
+       value="{{ form.username.value | default_if_none:'' }}"
+       required
+       autofocus
+     >
+     <div class="invalid-feedback">
+       A username or email address is required.
+     </div>
+   </div>
+ 
+   <div class="mb-3">
+     <label class="form-label" for="{{ form.password.id_for_label }}">{{ form.password.label }}<sup>*</sup></label>
+     <input
+       class="form-control form-control-lg {% if form.password.errors %}is-invalid{% endif %}"
+       type="password"
+       name="password"
+       id="{{ form.password.id_for_label }}"
+       placeholder="Enter your password"
+       required
+     >
+     <div class="invalid-feedback">
+       A password is required.
+     </div>
+   </div>
+ 
+   <input type="hidden" name="next" value="{{ next }}">
+ 
+   <button class="btn btn-lg btn-primary w-100 mb-3" type="submit">Sign in</button>
+   <a href="{% url 'password_reset' %}">Forgot password?</a>
+ </form>
+{% endblock %}
+

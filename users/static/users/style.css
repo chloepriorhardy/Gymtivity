@@ -1,0 +1,32 @@
+.messages {
+    width: 100%;
+    max-width: 362px;
+    margin: auto;
+ }
+  
+ .alert {
+    border-radius: 0;
+ }
+  
+ .form-auth {
+    width: 100%;
+    max-width: 362px;
+    margin: auto;
+ }
+  
+ .form-auth sup {
+    top: -.2em;
+ }
+  
+ .form-auth .form-control-lg {
+    border-radius: 0;
+    min-height: 3rem;
+    font-size: 0.8rem;
+ }
+  
+ .form-auth button {
+    border-radius: 0;
+ }
+ 
+
+ 

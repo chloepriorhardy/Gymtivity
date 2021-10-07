@@ -1,0 +1,40 @@
+{% load static %}
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+    <!-- TODO: Favicons -->
+    <link rel="stylesheet" href="{% static 'css/lib/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'landing/style.css' %}">
+  </head>
+
+  <body class="h-100">
+    <div class="cover-wrapper d-flex h-100 text-center">
+      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+          <div>
+            <h3 class="float-md-start mb-0">Gymtivity</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+              <a class="nav-link active" aria-current="page" href="{% url 'login' %}">Login</a>
+              <a class="nav-link" href="{% url 'users:register'%}">Sign Up</a>
+              <a class="nav-link" href="#">About</a>
+            </nav>
+          </div>
+        </header>
+    
+        <main class="px-3">
+          <h1>Landing page.</h1>
+          <p class="lead">{% lorem 15 w random %}</p>
+        </main>
+    
+        <footer class="mt-auto">
+          <p>Landing page for the Computer Science Project.</p>
+        </footer>
+      </div>
+    </div>
+    <script src="{% static 'js/lib/bootstrap.bundle.min.js' %}"></script>
+  </body>
+
+</html>

@@ -1,0 +1,15 @@
+{% extends './base.html' %}
+{% load i18n %}
+{% block title %}{% translate "Logged out" %}{% endblock %}
+{% block heading %}{% translate "Logged out" %}{% endblock %}
+ 
+{# TODO: Redirect and flash message. #}
+ 
+{% block navbar_text %}
+<a href="{% url 'login' %}">{% translate "Sign in" %}</a>
+{% endblock %}
+ 
+{% block content %}
+ <p>{% translate "You have successfully logged out." %}</p>
+{% endblock %}
+

@@ -1,0 +1,57 @@
+{% load static %}
+{# TODO: i18n #}
+<!doctype html>
+<html class="h-100">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>{% block title %}{% endblock %}</title>
+   <link rel="stylesheet" href="{% static 'css/lib/bootstrap.min.css' %}">
+   <link rel="stylesheet" href="{% static 'users/style.css' %}">
+ </head>
+ 
+ <body class="d-flex flex-column h-100">
+   <nav class="navbar navbar-light border-bottom">
+     <div class="container-fluid">
+       <a class="navbar-brand" href="/">
+         <img src="{% static 'img/logo.png' %}" alt="" width="40">
+         <!-- TODO: Brand -->
+         <span class="fs-4">Gymtivity</span>
+       </a>
+ 
+       <span class="navbar-text">
+         {% block navbar_text %}{% endblock %}
+       </span>
+     </div>
+   </nav>
+ 
+   <div class="col-12 col-lg-8 m-auto">
+     <div class="messages">
+       {% block messages %}
+         {% if form.non_field_errors %}
+           <div class="alert alert-danger" role="alert">
+             {{ form.non_field_errors.0 }}
+           </div>
+         {% endif %}
+       {% endblock %}
+     </div>
+     <main class="form-auth p-3 bg-white border">
+       <p>{% block heading %}{% endblock %}</p>
+       {% block content %}{% endblock %}
+     </main>
+   </div>
+ 
+   <footer class="footer mt-auto py-3 text-muted border-top">
+     <div class="container">
+       Computer Science Project Stub &middot; &copy; 2021
+     </div>
+   </footer>
+ 
+   <script src="{% static 'js/lib/bootstrap.bundle.min.js' %}"></script>
+   <script src="{% static 'users/form_validation.js' %}"></script>
+   {% block scripts %}{% endblock %}
+ 
+ </body>
+ 
+</html>
+
