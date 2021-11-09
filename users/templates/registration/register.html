@@ -38,6 +38,8 @@
          name="{{ form.password1.html_name }}"
          id="{{ form.password1.id_for_label }}"
          placeholder="Enter your password"
+         minLength="8"
+         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
          required
        >
        <div class="invalid-feedback">
