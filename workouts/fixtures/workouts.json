@@ -1,0 +1,3284 @@
+[
+{
+    "model": "workouts.workout",
+    "pk": 3,
+    "fields": {
+        "name": "Murph",
+        "description": "Run, pull-ups, push-ups and another run for time.\r\n\r\nPartition the pull-ups, push-ups, and squats as needed. Start and finish with a mile run. If you’ve got a twenty pound vest or body armour, wear it.",
+        "rounds": 1,
+        "time_limit": "00:00:00"
+    }
+},
+{
+    "model": "workouts.workout",
+    "pk": 4,
+    "fields": {
+        "name": "15 Minute HIIT Body",
+        "description": "Cardio and core intervals with no equipment.",
+        "rounds": 3,
+        "time_limit": "00:00:00"
+    }
+},
+{
+    "model": "workouts.workout",
+    "pk": 5,
+    "fields": {
+        "name": "Fran",
+        "description": "Thrusters and pull-ups 21-15-9 for time.",
+        "rounds": 1,
+        "time_limit": "00:00:00"
+    }
+},
+{
+    "model": "workouts.workout",
+    "pk": 6,
+    "fields": {
+        "name": "Cindy",
+        "description": "As many reps as you can in 20 mins of pull-ups, push-ups and air squats.",
+        "rounds": 1,
+        "time_limit": "00:00:00"
+    }
+},
+{
+    "model": "workouts.workout",
+    "pk": 7,
+    "fields": {
+        "name": "Chelsea",
+        "description": "Every minute on the minute for 30 minutes. Pull-ups, push-ups and air squats.",
+        "rounds": 1,
+        "time_limit": "00:00:00"
+    }
+},
+{
+    "model": "workouts.workout",
+    "pk": 8,
+    "fields": {
+        "name": "Helen",
+        "description": "3 rounds for time. Run, kettlebell swings and pull-ups.",
+        "rounds": 1,
+        "time_limit": "00:00:00"
+    }
+},
+{
+    "model": "workouts.workout",
+    "pk": 9,
+    "fields": {
+        "name": "The Longest Mile",
+        "description": "Four rounds for time. Including burpees, running, squats and push-ups.",
+        "rounds": 1,
+        "time_limit": "00:00:00"
+    }
+},
+{
+    "model": "workouts.workout",
+    "pk": 10,
+    "fields": {
+        "name": "Chest Day",
+        "description": "Heavy chest overload.",
+        "rounds": 1,
+        "time_limit": "00:00:00"
+    }
+},
+{
+    "model": "workouts.workoutstyle",
+    "pk": 1,
+    "fields": {
+        "name": "AMRAP",
+        "description": "As many reps or rounds as possible.",
+        "quantity_name": "R"
+    }
+},
+{
+    "model": "workouts.workoutstyle",
+    "pk": 2,
+    "fields": {
+        "name": "For Time",
+        "description": "Complete the exercises as quickly as possible.",
+        "quantity_name": "T"
+    }
+},
+{
+    "model": "workouts.workoutstyle",
+    "pk": 3,
+    "fields": {
+        "name": "EMOM",
+        "description": "Every minute on the minute.",
+        "quantity_name": "R"
+    }
+},
+{
+    "model": "workouts.workoutstyle",
+    "pk": 4,
+    "fields": {
+        "name": "One-Rep Max",
+        "description": "Maximum weight lifted for one repetition.",
+        "quantity_name": "W"
+    }
+},
+{
+    "model": "workouts.workoutstyle",
+    "pk": 5,
+    "fields": {
+        "name": "Rate Of Work",
+        "description": "Number of reps times the average weight.",
+        "quantity_name": "A"
+    }
+},
+{
+    "model": "workouts.workoutstyle",
+    "pk": 6,
+    "fields": {
+        "name": "Progressive Overload",
+        "description": "Aim to reach failure on the last reps of the last one or two sets.",
+        "quantity_name": "A"
+    }
+},
+{
+    "model": "workouts.interval",
+    "pk": 12,
+    "fields": {
+        "workout": 3,
+        "repeat": 1,
+        "time_limit": "00:00:00",
+        "style": 2,
+        "rest": "00:00:00"
+    }
+},
+{
+    "model": "workouts.interval",
+    "pk": 17,
+    "fields": {
+        "workout": 4,
+        "repeat": 1,
+        "time_limit": "00:00:35",
+        "style": 1,
+        "rest": "00:00:25"
+    }
+},
+{
+    "model": "workouts.interval",
+    "pk": 18,
+    "fields": {
+        "workout": 4,
+        "repeat": 1,
+        "time_limit": "00:00:00",
+        "style": 1,
+        "rest": "00:00:25"
+    }
+},
+{
+    "model": "workouts.interval",
+    "pk": 19,
+    "fields": {
+        "workout": 4,
+        "repeat": 1,
+        "time_limit": "00:00:35",
+        "style": 1,
+        "rest": "00:00:25"
+    }
+},
+{
+    "model": "workouts.interval",
+    "pk": 20,
+    "fields": {
+        "workout": 4,
+        "repeat": 1,
+        "time_limit": "00:00:35",
+        "style": 1,
+        "rest": "00:00:25"
+    }
+},
+{
+    "model": "workouts.interval",
+    "pk": 21,
+    "fields": {
+        "workout": 5,
+        "repeat": 1,
+        "time_limit": "00:00:00",
+        "style": 2,
+        "rest": "00:00:00"
+    }
+},
+{
+    "model": "workouts.interval",
+    "pk": 22,
+    "fields": {
+        "workout": 6,
+        "repeat": 1,
+        "time_limit": "00:20:00",
+        "style": 1,
+        "rest": "00:00:00"
+    }
+},
+{
+    "model": "workouts.interval",
+    "pk": 23,
+    "fields": {
+        "workout": 7,
+        "repeat": 1,
+        "time_limit": "00:30:00",
+        "style": 3,
+        "rest": "00:00:00"
+    }
+},
+{
+    "model": "workouts.interval",
+    "pk": 24,
+    "fields": {
+        "workout": 8,
+        "repeat": 3,
+        "time_limit": "00:00:00",
+        "style": 2,
+        "rest": "00:00:00"
+    }
+},
+{
+    "model": "workouts.interval",
+    "pk": 25,
+    "fields": {
+        "workout": 9,
+        "repeat": 4,
+        "time_limit": "00:00:00",
+        "style": 2,
+        "rest": "00:00:00"
+    }
+},
+{
+    "model": "workouts.interval",
+    "pk": 26,
+    "fields": {
+        "workout": 10,
+        "repeat": 4,
+        "time_limit": "00:00:00",
+        "style": 6,
+        "rest": "00:02:00"
+    }
+},
+{
+    "model": "workouts.interval",
+    "pk": 27,
+    "fields": {
+        "workout": 10,
+        "repeat": 4,
+        "time_limit": "00:00:00",
+        "style": 6,
+        "rest": "00:01:30"
+    }
+},
+{
+    "model": "workouts.interval",
+    "pk": 28,
+    "fields": {
+        "workout": 10,
+        "repeat": 4,
+        "time_limit": "00:00:00",
+        "style": 6,
+        "rest": "00:00:00"
+    }
+},
+{
+    "model": "workouts.interval",
+    "pk": 29,
+    "fields": {
+        "workout": 10,
+        "repeat": 4,
+        "time_limit": "00:00:00",
+        "style": 6,
+        "rest": "00:02:00"
+    }
+},
+{
+    "model": "workouts.interval",
+    "pk": 30,
+    "fields": {
+        "workout": 10,
+        "repeat": 4,
+        "time_limit": "00:00:00",
+        "style": 6,
+        "rest": "00:01:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 18,
+    "fields": {
+        "interval": 12,
+        "exercise": 12,
+        "reps": 0,
+        "duration": "00:00:00",
+        "distance": 1609,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 23,
+    "fields": {
+        "interval": 12,
+        "exercise": 13,
+        "reps": 100,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 24,
+    "fields": {
+        "interval": 12,
+        "exercise": 5,
+        "reps": 200,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 25,
+    "fields": {
+        "interval": 12,
+        "exercise": 2,
+        "reps": 300,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 26,
+    "fields": {
+        "interval": 12,
+        "exercise": 12,
+        "reps": 0,
+        "duration": "00:00:00",
+        "distance": 1609,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 27,
+    "fields": {
+        "interval": 17,
+        "exercise": 3,
+        "reps": 6,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 28,
+    "fields": {
+        "interval": 17,
+        "exercise": 4,
+        "reps": 4,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 29,
+    "fields": {
+        "interval": 18,
+        "exercise": 6,
+        "reps": 5,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 30,
+    "fields": {
+        "interval": 18,
+        "exercise": 5,
+        "reps": 5,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 31,
+    "fields": {
+        "interval": 19,
+        "exercise": 8,
+        "reps": 5,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 32,
+    "fields": {
+        "interval": 19,
+        "exercise": 9,
+        "reps": 5,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 33,
+    "fields": {
+        "interval": 20,
+        "exercise": 10,
+        "reps": 6,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 34,
+    "fields": {
+        "interval": 20,
+        "exercise": 11,
+        "reps": 2,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 35,
+    "fields": {
+        "interval": 21,
+        "exercise": 14,
+        "reps": 21,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 36,
+    "fields": {
+        "interval": 21,
+        "exercise": 13,
+        "reps": 21,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 37,
+    "fields": {
+        "interval": 21,
+        "exercise": 14,
+        "reps": 15,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 38,
+    "fields": {
+        "interval": 21,
+        "exercise": 13,
+        "reps": 15,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 39,
+    "fields": {
+        "interval": 21,
+        "exercise": 14,
+        "reps": 9,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 40,
+    "fields": {
+        "interval": 21,
+        "exercise": 13,
+        "reps": 9,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 41,
+    "fields": {
+        "interval": 22,
+        "exercise": 13,
+        "reps": 5,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 42,
+    "fields": {
+        "interval": 22,
+        "exercise": 5,
+        "reps": 10,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 43,
+    "fields": {
+        "interval": 22,
+        "exercise": 2,
+        "reps": 15,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 44,
+    "fields": {
+        "interval": 23,
+        "exercise": 13,
+        "reps": 5,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 45,
+    "fields": {
+        "interval": 23,
+        "exercise": 5,
+        "reps": 10,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 46,
+    "fields": {
+        "interval": 23,
+        "exercise": 2,
+        "reps": 15,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 47,
+    "fields": {
+        "interval": 24,
+        "exercise": 12,
+        "reps": 0,
+        "duration": "00:00:00",
+        "distance": 400,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 48,
+    "fields": {
+        "interval": 24,
+        "exercise": 15,
+        "reps": 21,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 49,
+    "fields": {
+        "interval": 24,
+        "exercise": 13,
+        "reps": 12,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 50,
+    "fields": {
+        "interval": 25,
+        "exercise": 16,
+        "reps": 10,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 51,
+    "fields": {
+        "interval": 25,
+        "exercise": 12,
+        "reps": 0,
+        "duration": "00:00:00",
+        "distance": 100,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 52,
+    "fields": {
+        "interval": 25,
+        "exercise": 2,
+        "reps": 10,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 53,
+    "fields": {
+        "interval": 25,
+        "exercise": 12,
+        "reps": 0,
+        "duration": "00:00:00",
+        "distance": 100,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 54,
+    "fields": {
+        "interval": 25,
+        "exercise": 5,
+        "reps": 10,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 55,
+    "fields": {
+        "interval": 25,
+        "exercise": 12,
+        "reps": 0,
+        "duration": "00:00:00",
+        "distance": 100,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 56,
+    "fields": {
+        "interval": 25,
+        "exercise": 17,
+        "reps": 10,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 57,
+    "fields": {
+        "interval": 25,
+        "exercise": 12,
+        "reps": 0,
+        "duration": "00:00:00",
+        "distance": 100,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 58,
+    "fields": {
+        "interval": 26,
+        "exercise": 18,
+        "reps": 8,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 59,
+    "fields": {
+        "interval": 27,
+        "exercise": 19,
+        "reps": 12,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 60,
+    "fields": {
+        "interval": 28,
+        "exercise": 20,
+        "reps": 10,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 61,
+    "fields": {
+        "interval": 29,
+        "exercise": 21,
+        "reps": 12,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.scheme",
+    "pk": 62,
+    "fields": {
+        "interval": 30,
+        "exercise": 22,
+        "reps": 12,
+        "duration": "00:00:00",
+        "distance": 0,
+        "time_limit": "00:00:00",
+        "calories": 0,
+        "pace_one": "00:00:00",
+        "pace_two": "00:00:00",
+        "pace_three": "00:00:00"
+    }
+},
+{
+    "model": "workouts.licence",
+    "pk": 1,
+    "fields": {
+        "name": "Creative Commons Attribution-ShareAlike 3.0",
+        "notice": "",
+        "link": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+},
+{
+    "model": "workouts.licence",
+    "pk": 2,
+    "fields": {
+        "name": "CC0",
+        "notice": "",
+        "link": "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
+    }
+},
+{
+    "model": "workouts.licence",
+    "pk": 3,
+    "fields": {
+        "name": "Copyright Dennis Publishing Limited",
+        "notice": "",
+        "link": "https://www.coachmag.co.uk/full-body-exercises/6500/how-to-do-the-thruster"
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 1,
+    "fields": {
+        "name": "Deadlift",
+        "description": "The conventional deadlift can be broken down into three parts: the setup, the initial pull or drive, and the lockout.\r\n\r\n## Setup\r\n\r\nWhen performing a deadlift, a lifter sets in a position that eccentrically loads the gluteus maximus, gluteus minimus, biceps femoris, semitendinosus and semimembranosus while the muscles of the lumbar contract isometrically in an effort to stabilize the spine.\r\n\r\n* Set behind the bar with it touching or nearly touching the legs.\r\n* Begin by hinging at the hips and knees, setting one's weight predominantly in the heels while maintaining flat feet.\r\n*Maintain the spine long and straight as the hips hinge back, taking care not to allow the knees to track forwards over the toes.\r\n*Grip the bar outside of the legs.\r\n*Depress the shoulders away from the ears to load the lats and to generate force throughout the spinal erectors.\r\n\r\n## Drive\r\n\r\nThe next section of the deadlift produces the highest amount of force. By pushing down through their heels while simultaneously pushing up and forward with their hips and maintaining a depressed scapula and a long tense spine, an individual can remain safe during this motion. This is considered the most difficult part of the entire movement due to the amount of work required to drive the bar off the ground initially.\r\n\r\n*Take a deep diaphragmatic breath and hold it in during the movement, creating an outward pressure on the core to further stabilize the lumbopelvic hip complex and core throughout the motion.\r\n*Keep the muscles of the back contracted tightly in order to maintain a safe posture throughout the motion.\r\n*Drive up and forward with the hips and legs to stand erect and lift the bar.\r\n\r\n## Lockout\r\n\r\nThe finish is the most critical aspect of the motion. This requires being totally erect with a neutral spine and forceful hip extension to engage the muscles of the lumbar spine and abdomen in unison with the glutes.\r\n\r\n* Drive the hips completely into the bar.\r\n* Contract the glutei and the rectus abdominis to finish the movement with the pelvis in a neutral position. Contracting the glutes as well as the abdominal muscles is critical for lower back health and safety.\r\n* Lowering the weight: Performing the above steps in reverse order. As the muscles of the back and core must remain tight throughout the motion, one should simply hinge at the hips and knees to bring the weight down. Lowering the chest towards the knees while keeping the bar close is the safest way to complete the motion.",
+        "source": "https://en.wikipedia.org/wiki/Deadlift",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 2,
+    "fields": {
+        "name": "Squat",
+        "description": "The movement begins from a standing position. Weight is often added; typically in the form of a loaded barbell, but dumbbells and kettlebells may also be used. When a barbell is used, it may be braced across the upper trapezius muscle, which is termed a high bar squat, or held lower across the rear deltoids, termed a low bar squat. The movement is initiated by moving the hips back and bending the knees and hips to lower the torso and accompanying weight, then returning to the upright position.\r\n\r\nSquats can be performed to varying depths. The competition standard is for the crease of the hip (top surface of the leg at the hip joint) to fall below the top of the knee; this is colloquially known as \"parallel\" depth. Although it may be confusing, many other definitions for \"parallel\" depth abound, none of which represents the standard in organized powerlifting. From shallowest to deepest, these other standards are: bottom of hamstring parallel to the ground; the hip joint itself below the top of the knee, or femur parallel to the floor; and the top of the upper thigh (i.e., top of the quadriceps) below the top of the knee. Squatting below parallel qualifies a squat as deep while squatting above it qualifies as shallow. Some authorities caution against deep squats; though the forces on the ACL and PCL decrease at high flexion, compressive forces on the menisci and articular cartilages in the knee peak at these same high angles. This makes the relative safety of deep versus shallow squats difficult to determine.\r\n\r\nAs the body descends, the hips and knees undergo flexion, the ankle extends (dorsiflexes) and muscles around the joint contract eccentrically, reaching maximal contraction at the bottom of the movement while slowing and reversing descent. The muscles around the hips provide the power out of the bottom. If the knees slide forward or cave in then tension is taken from the hamstrings, hindering power on the ascent. Returning to vertical contracts the muscles concentrically, and the hips and knees undergo extension while the ankle plantarflexes.",
+        "source": "https://en.wikipedia.org/wiki/Squat_(exercise)",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 3,
+    "fields": {
+        "name": "High Knees",
+        "description": "1. Keep your arms at your sides, feet hip-width apart. Stand tall with your thighs perpendicular to the ground as you begin this motion, making sure not to move them higher than this parallel point. Avoid kicking your legs backward while doing this.\r\n\r\n2. Slowly lift one knee at a time. Alternate between each of your knees one at a time, lifting and lowering your legs at the same steady speed. Lift your left knee as high as you can and then lower at the same speed, letting your foot touch the ground right before lifting your right knee up to repeat this same process.\r\n* Take off and land on the balls of your feet.\r\n*If you're using good form, your feet will be lined up directly below your knees. Your feet should not be extended out or bent back.\r\n*High knees consist of lifting your knees as high up as possible, your left and right knees raising and lowering in an alternating fashion.\r\n\r\n3. Begin swinging your arms while maintaining a slow march. Swing your arms from your shoulders front and back while avoiding side-to-side swaying. You should synchronize this movement with the opposite leg. Keep your elbows bent, with hands passing your body near the hips.\r\n\r\n4. Pick up your pace, lifting your knees quickly while maintaining good form. Keep your eyes focused straight ahead while keeping your back straight to sustain stable posture. Your legs should still be lifting and lowering in an alternating fashion. As your pace quickens with your gained confidence, your hands should rise up level to your cheeks with each knee up.",
+        "source": "https://www.wikihow.com/Do-High-Knees",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 4,
+    "fields": {
+        "name": "Lunge Jumps",
+        "description": "1. Plant your feet. The lunge position requires you to stand with your feet pointing directly ahead hip-width apart. Place 1 foot about 0.5 metres (1.6 ft) forward of the other. It doesn’t matter if you put your right foot forward of your left or vice versa. Your back foot should be bent at the toe, and your heel should be up at about a 45 degree angle relative to the ground.\r\n\r\n2. Angle your knees. Drop your hips until both knees form right angles. Push your front-most knee out slightly to the side. Keep your back knee and thigh parallel with your body. Do not allow your forward-most knee to extend beyond the ends of your toes.\r\n\r\n* Place your hands on your hips, head, or at your sides.\r\n* Make sure you brace your core.\r\n\r\n3. Jump up. The lunge position enables you to jump with tremendous force. From a lunge position, move as if to stand, but do so quickly. Summon a lot of power to explosively push yourself off the ground with your feet. Pop straight into the air. Once in midair, quickly move your back foot to the frontal position and your front foot to the back.\r\n\r\n* For instance, if -- in your initial lunge position -- your left foot was behind you and your right foot was in front of you, you should move your right foot behind you and place your left foot in front of you.\r\n* Jump up, not forward.\r\n\r\n4. Land your jump lunge. Place your feet at the same distance that you did when assuming the initial lunge position. You should land on your toes without bending your knees further. In other words, since you’ve already adjusted your legs to assume the lunge position in midair, your landing should simply drop you down in a lunge position.\r\n\r\n* Your landing should be quiet. This indicates your body is absorbing the shock of the landing and not stressing your joints.\r\n\r\n5. Repeat the jump lunge.[8] Hold the lunge position for about 2 to 3 seconds after you land before heading into your next 1. You should be able to do 8 in about 15 to 30 seconds.\r\n\r\n* When you first begin doing jump lunges, do 3 to 5. As you improve your technique, slowly add 1 jump lunge each week until you’re doing about 8 jump lunges.\r\n* You could also increase the difficulty of the jump lunge by making your lunges slightly deeper as you get better.",
+        "source": "https://www.wikihow.fitness/Do-Jump-Lunges",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 5,
+    "fields": {
+        "name": "Push-up",
+        "description": "1. Get down on the ground. Lay with your toes on the ground holding yourself up with your hands. Lower your torso to the ground until your elbows reach a 90-degree angle. Keep your elbows close to your body for more resistance. Keep your head facing forward. Try to have the tip of your nose pointed directly ahead. Keep your body in a flat plank—do not drop your hips, and do not have your butt hanging in the air. It is important to keep your body as straight as possible. Remember to breathe as you lower yourself.\r\n\r\n* Your hands should be slightly wider than your shoulders. This works both your arms and your chest.\r\n* When doing push-ups, your chest should come within inches of the ground each time you go down for a rep. Remember to keep your body at a flat level.\r\n\r\n2. Raise yourself by pushing the ground away from you. Breathe out as you push. The power for that push will come from your shoulders and chest working in unison. The triceps (the muscle on the back side of your upper arm) are also contracted but they aren't the primary muscle group being used. Don't be tempted to use your rear end or your stomach. Continue to exert force until your arms are almost in a straight position again, make sure to not lock your arms.\r\n\r\n3. \r\nRepeat lowering and raising at a steady pace. Each pair counts as a single push up. Do this until you finish your set or you hit your maximum.",
+        "source": "https://www.wikihow.com/Do-a-Push-Up",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 6,
+    "fields": {
+        "name": "Narrow-grip Push-up",
+        "description": "1. Get down on the ground. Lay with your toes on the ground holding yourself up with your hands. Lower your torso to the ground until your elbows reach a 90-degree angle. Keep your elbows close to your body for more resistance. Keep your head facing forward. Try to have the tip of your nose pointed directly ahead. Keep your body in a flat plank—do not drop your hips, and do not have your butt hanging in the air. It is important to keep your body as straight as possible. Remember to breathe as you lower yourself.\r\n\r\n* Your hands should be just a few inches apart from each other underneath the chest.\r\n* When doing push-ups, your chest should come within inches of the ground each time you go down for a rep. Remember to keep your body at a flat level.\r\n\r\n2. Raise yourself by pushing the ground away from you. Breathe out as you push. The power for that push will come from your shoulders and chest working in unison. The triceps (the muscle on the back side of your upper arm) are also contracted but they aren't the primary muscle group being used. Don't be tempted to use your rear end or your stomach. Continue to exert force until your arms are almost in a straight position again, make sure to not lock your arms.\r\n\r\n3. \r\nRepeat lowering and raising at a steady pace. Each pair counts as a single push up. Do this until you finish your set or you hit your maximum.",
+        "source": "https://www.wikihow.com/Do-a-Push-Up",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 8,
+    "fields": {
+        "name": "Toe Touches",
+        "description": "1. Lie flat on your back. Bend your knees so that your feet are flat on the floor. Place your arms by your sides.\r\n\r\n2. Tighten your abdominal muscles. Contract your shoulder blades. Slowly, lift both feet off the floor until your thighs are vertical to the floor. It's okay if your toes point away from your body.\r\n\r\n3. Exhale. Further contract your abs to pull your head and shoulders off the floor. As you do so, run your hands up your thighs towards your ankles. Continue the motion until your shoulder blades are completely off the floor. Your hands should be close to, if not touching, your feet/toes.\r\n\r\n4. Return to the starting position in a slow, controlled manner. Then, repeat.",
+        "source": "https://www.wikihow.com/Do-Vertical-Toe-Touches",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 9,
+    "fields": {
+        "name": "Full Body Crunch",
+        "description": "1. Lay on your back with your arms and legs stretched out. Touch your heals to the floor and point your toes.\r\n\r\n2. Contract your abs and push your lower back into the floor.\r\n\r\n3. Simultaneously bring your knees and and hands up to meet in the middle while keeping your lower back in contact with the floor.\r\n\r\n4. Return to the start position in a controlled manner and repeat. Don't let your legs crash to the floor.",
+        "source": "",
+        "licence": 2
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 10,
+    "fields": {
+        "name": "Mountain Climbers",
+        "description": "1. Get into plank position. Get down on the floor on your hands and knees. Extend your legs out behind you, balancing on the balls and toes. Place your hands directly under your shoulders with your fingers facing forward and slightly outward. Keep your core engaged by squeezing your stomach muscles. Your body should be in a straight line from your crown to your heels.\r\n\r\n* Don’t allow your body to come out of alignment. A sagging butt or V-shaped hip angle are symptoms of bad form.\r\n* Hold your arms strong and straight, but don’t lock your elbows. This could lead to injury.\r\n\r\n2. Pull one knee up and in toward your midsection. Lift one foot and begin bending the knee as you pull it up between the front of your body and the floor. Bring the knee forward in one smooth, controlled motion. Don’t let either of your knees sag or come into contact with the floor. Once you’ve raised your knee as far as you can, contract and hold your abs briefly but forcefully.\r\n\r\n* If possible, try to touch the top of your thigh to your chest.\r\n*Resistance is created by gravity to work the core muscles, quadriceps, hip flexors, and glutes, while the chest, deltoids, lats, and lower back are responsible for stabilizing the plank position.\r\n\r\n3. Repeat the action with your other knee. Relax your midsection and push your knee back toward your other foot slowly. Straight your leg and set your foot back on the ground behind you. Then, bring the other knee forward, moving fluidly and squeezing your abs.\r\n\r\n* You should have one foot on the floor at all times to serve as your base.\r\n\r\n4. Continue alternating the movement with both knees. Return your leg to the floor behind you and begin pulling the opposite knee up once more. Repeat this motion until you get comfortable with it. That’s it! Do as many mountain climbers as you can before you tire out, and try to increase the number over time. This exercise makes a welcome addition to any strength and conditioning workout.\r\n\r\n* Once you start getting the hang of it, you can increase your speed until your legs are bounding rather than moving one at a time.",
+        "source": "https://www.wikihow.fitness/Do-Mountain-Climbers",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 11,
+    "fields": {
+        "name": "Plank Lateral Move",
+        "description": "1. Get into plank position. Get down on the floor on your hands and knees. Extend your legs out behind you, balancing on the balls and toes. Place your hands directly under your shoulders with your fingers facing forward and slightly outward. Keep your core engaged by squeezing your stomach muscles. Your body should be in a straight line from your crown to your heels.\r\n\r\n* Don’t allow your body to come out of alignment. A sagging butt or V-shaped hip angle are symptoms of bad form.\r\n* Hold your arms strong and straight, but don’t lock your elbows. This could lead to injury.\r\n\r\n2. Move one hand to the side, followed by one foot on the same side.\r\n\r\n3. Bring the opposite hand, then foot, in the same direction so as to arrive back at a shoulder width position.\r\n\r\n4. Repeat the process in the other direction.",
+        "source": "https://www.wikihow.fitness/Do-Mountain-Climbers",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 12,
+    "fields": {
+        "name": "Run",
+        "description": "Running is a method of terrestrial locomotion allowing humans and other animals to move rapidly on foot. Running is a type of gait characterized by an aerial phase in which all feet are above the ground (though there are exceptions). This is in contrast to walking, where one foot is always in contact with the ground, the legs are kept mostly straight and the center of gravity vaults over the stance leg or legs in an inverted pendulum fashion. A feature of a running body from the viewpoint of spring-mass mechanics is that changes in kinetic and potential energy within a stride occur simultaneously, with energy storage accomplished by springy tendons and passive muscle elasticity.",
+        "source": "https://en.wikipedia.org/wiki/Running",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 13,
+    "fields": {
+        "name": "Pull-ups",
+        "description": "1. Grip a pullup bar with your palms facing whichever direction you prefer. In general, having your palms facing towards you is most efficient. When you pull yourself up with your hands facing this way, you give your biceps and lats a better workout. Pulling yourself up with your palms out is considered the most difficult way to pull up your bodyweight but also gives deltoids and triceps a good workout. Start with your arms fully extended.\r\n\r\n2. Pull your bodyweight up until your chin is just barely above the bar. You may have to strain, but keep pulling until you've lifted yourself up using your back and biceps.\r\n\r\n* In order to keep your bodyweight centered, you can cross your feet beneath you as you lift yourself up.\r\n* Remember kicking your feet to gain extra momentum isn't helping anything.\r\n\r\n3. Lower yourself until your arms are fully extended. Lower yourself in a controlled way to work the muscles harder and prep yourself for the next pull.\r\n\r\n4. Do another pullup. Once your arms are almost extended, start pulling up again.",
+        "source": "https://www.wikihow.com/Do-Pullups",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 14,
+    "fields": {
+        "name": "Thrusters",
+        "description": "Stand with the bar in the front squat rack position, holding it with your hands slightly wider than shoulder-width apart. Keep your elbows as high as you can as you lower into a squat. Keep your knees wide apart and your heels down. Lower until your thighs are at least parallel with the ground.\r\n\r\nDrive up through your heels using your quads and glutes. Maintain that momentum as you come to the top of the squat and use it to help you push the bar over your head until your arms are locked out. Then bring the bar back down to your chest to complete one rep.",
+        "source": "https://www.coachmag.co.uk/full-body-exercises/6500/how-to-do-the-thruster",
+        "licence": 3
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 15,
+    "fields": {
+        "name": "Kettlebell Swing",
+        "description": "1. Stand with your feet shoulder-width apart. To start a kettlebell swing, spread your legs and plant your feet firmly on the ground. You may want to move your feet a little or rock back and forth to place your weight correctly.\r\n\r\n* Make sure your weight is firmly in the heels and balls of your feet, and that as you are standing your feet are aligned directly under your shoulders and hips. Your toes should be pointed straight ahead in front of you.\r\n* Straighten your back and drop your shoulder blades down your back, keeping your shoulders neutral.\r\n\r\n2. Grip the kettlebell. Squat down and wrap your fingers around the handle of the kettlebell. Your palms should be facing you. Wrap your thumbs loosely around the handle as well – don't leave them sticking out.\r\n\r\n* Once you have a good grip on the kettlebell handle, stand tall, retracting your shoulder blades. Make sure your arms are loose at your sides.\r\n* Shift your weight to your heels and bend your knees slightly, lowering your rear end down and back toward the wall, as though you are going into a squat. Your back should be straight, shoulders neutral.\r\n\r\n3. Thrust forward with your hips. When you're ready to start the kettlebell swing, drive through your heels and push your hips forward at the same time you straighten your legs. Your arms work like a pendulum, with the weight of the kettlebell pulling your arms up and forward. Keep your arms straight and fully extended and aim to get the kettlebell to about chest height.\r\n\r\n* For this motion, you should feel a line of energy running up from your heels all the way up your legs to your hips. Your entire lower body and core will be engaged.\r\n* When you are upright, contract your glutes and snap your hips. Contract your core as well to keep control of the weight.\r\n* This will pull you forward, but try to avoid rocking on your feet as you swing. Keep your feet firm.\r\n\r\n4. Shift your weight back to receive the weight. When the kettlebell reaches the desired height, shift your weight onto your heels. Rather than trying to bring the kettlebell back, let the weight return of its own accord. Bend your knees and, in a smooth continuous motion, allow the kettlebell to lower as your hips flex back.\r\n\r\n* This is counter to many exercises you may have done, in which you must control the negative movement as well. All you need to focus on is absorbing the shock and getting your body ready to swing the kettlebell back out again.\r\n* Allow the kettlebell to swing back through your legs, taking care to keep your feet and hips planted firmly, your shoulders neutral, your back straight.\r\n\r\n5. Drive through your hips. With the kettlebell between your legs, you're ready for the next repetition. Feel the energy coming through your heels and up your legs, and explode forward from your hips to propel the kettlebell back out.\r\n\r\n* Focus on controlling the kettlebell with your arms and maintaining your grip, but keep in mind that your arms are doing the least work in this exercise. All the force is coming from your lower body, your hips, and your core.\r\n* Try to shift your weight through the swing without moving your feet or stepping out of position, keeping your back and shoulders in the same position with every rep.\r\n\r\n6. Keep your swings continuous. Once you've mastered your technique and form, when you go to do the kettlebell swing your focus should be on maintaining continuous motion, rather than pausing or stopping after each swing.",
+        "source": "https://www.wikihow.fitness/Do-a-Kettleball-Swing",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 16,
+    "fields": {
+        "name": "Burpees",
+        "description": "1. Stand with your feet shoulder-width apart. Hold your arms at your sides and stand with your knees straight. Also, make sure to tighten your abs, keep your back flat, and squeeze your buttocks at the start of each burpee.\r\n\r\n2. Bend at your hips and knees to lower yourself into a squatting position. Hinge forward with your hips and bend your knees slightly to bring your body down lower to the floor. Keep your back straight and your arms in close to your body as you do this.\r\n\r\n3. Place your hands on the floor in front of you. Keep your hands close together so they are directly under your shoulders when you place them on the ground. Hold your arms out straight, but don't lock out your elbows.\r\n\r\n4. Kick your feet back so that you are in the plank position. Jump both feet back behind you at the same time and position them about shoulder-width apart. Keep your hands planted firmly on the ground to support your body as you do this.\r\n\r\n5. Drop all the way down to the floor. Once you are in the plank position, carefully lower your chest all the way down to the floor to do a pushup. Keep your hands flat on the floor with your elbows up in the air and your arms close to your body.\r\n\r\n6. Press up with your arms and jump your feet forward. Keep your hands flat on the ground and push off from the ground with your hand as you hinge forward at the hips and jump your feet towards your chest. Do this in one smooth motion.\r\n\r\n7. Jump straight upwards to finish the move. Once your feet are back under your upper body, jump straight up with your hands and arms raised over your head and then land in the standing position. You can jump as high as you are able, or just do a little hop in the air to finish the burpee.\r\n\r\n* Make sure to keep your core engaged as you do this. Flex your abs and stand up tall when you jump.",
+        "source": "https://www.wikihow.life/Do-a-Burpee",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 17,
+    "fields": {
+        "name": "Sit-Ups",
+        "description": "Sit ups are an excellent core muscle exercise that target your abdominal muscles, hip flexors, and lower back. When done slowly and carefully, sit ups will not cause back pain, and instead can aid digestion, build muscle, and improve posture over time.\r\n\r\n1. Start by lying on your back with your knees bent. Sit ups work best if you do them on a soft surface, such as a mattress. Keep your knees bent at a 90-degree angle, with your feet flat on the floor.\r\n\r\n* You may be more comfortable if you lie on an exercise mat while you’re doing sit ups.\r\n\r\n2. Put your fingertips on the back of your ears. Your elbows should be bent and pointing out at your sides. Cupping the back of your ears with your fingertips - as opposed to placing them on the back of your head - can help prevent you from pulling yourself up by your neck as you’re doing sit ups.\r\n\r\n* You can also cross your arms over your chest or hold your arms slightly above the floor so they’re parallel to your sides.\r\n\r\n3. Lift your torso up as close to your thighs as possible. Do this with a smooth, steady motion, keeping your feet flat on the floor. When you’re done lifting your torso, your lower back should be off the floor.\r\n\r\n4. Lower your torso down to the floor so you’re back in the starting position. Like you did when you lifted your torso up to your thighs, use a smooth and steady motion as you lower it down.",
+        "source": "https://www.wikihow.com/Do-Sit-Ups",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 18,
+    "fields": {
+        "name": "Barbell Bench Press",
+        "description": "1. Begin by lying flat on the bench, with your body in a natural and relaxed position. Make sure that you are not holding your shoulders in an awkward position. Be sure to have a natural spinal curve. You do not want to have your lower back flat on the bench, but you do not want to force it to curve too much either. Instead, opt for a comfortable and natural position.\r\n\r\n* You should have your feet flat on the ground, shoulder-width apart, and your shoulders touching the bench.\r\n* Do not lift on a \"cushiony bench\" if you are a heavy lifter. When the bar and plates weigh more than 200 pounds plus the weight of your upper body, your shoulders will disappear into the bench and cause neck strain.\r\n* Choose a proper bench that fits your shoulder width. A narrow bench is unstable and a wide bench prevents the upper arm from bending back.\r\n\r\n2. Put your arms straight out to either side of you, and then bend your elbows, bringing your hands up to touch the bar. This is where you should position your hands. They should be about shoulder-width apart. Use the smooth rings in the bar as a reference for even hand placement.\r\n\r\n* Where you position your hands will affect which muscle group you work most. Widen your grip slightly to increase the amount of pectoral muscles involved in this exercise, and bring your grip in slightly to increase your triceps involvement. For a standard bench press, opt for the normal grip.\r\n\r\n3. Begin with just the bar weight to warm up before heavy lifting. Lift the bar off the rack and position it directly above the middle of your chest. Inhale as you lower it down, gently touching your chest - the middle of the sternum - with the bar. Do not bounce the bar off your chest, as this can cause serious injury and promotes bad form. Begin to exhale as you push the bar up and away from your body. Extend your arms to just under full extension. Repeat this for eight repetitions as your first set.\r\n\r\n4. Lift the bar up, slowly bring it down to just above your sternum, and explode upward for one rep.",
+        "source": "https://www.wikihow.com/Bench-Press",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 19,
+    "fields": {
+        "name": "Dumbbell Incline Press",
+        "description": "Raise the bench 45 degrees to target your upper chest muscles. Complete the same motion as you would for a regular dumbbell bench press, but raise the bench instead of leaving it flat. The angle forces your upper chest muscles to adapt and work harder.",
+        "source": "https://www.wikihow.com/Dumbbell-Press",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 20,
+    "fields": {
+        "name": "Barbell Incline Bench Press",
+        "description": "Set the incline to between 45 and 60 degrees. Hold the weight above your head, with your arms just slightly more than shoulder-width apart and your elbows pointing outward. As you inhale, slowly lower the weight to the nipple line. Pause at the bottom of the move before pressing your arms up.",
+        "source": "https://www.wikihow.fitness/Work-Out-Your-Upper-Chest",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 21,
+    "fields": {
+        "name": "Chest Dips",
+        "description": "1. Get into position by placing your hand on the parallel bars. If they're tall enough to do dips without lifting your legs, you'll need to lift yourself onto the bars. Push yourself up onto the bars until you can straighten out your arms. Keep your hands straight out to the sides of your torso, not in front of or behind your chest. Straighten your legs and point your toes.\r\n\r\n* If your parallel bars are shorter, you can bend your knees so that you have space between your body and the ground to perform the dips.\r\n*Keep your upper body straight, too, and your core tight.\r\n\r\n2. Lower yourself down with your arms, keep your head and shoulders straight. Look ahead as you dip to make sure you're not tucking your head into your chest. Lower yourself down until you reach at least a 90-degree angle with your elbows.\r\n\r\n* Keep your elbows tucked close to your body; don't let them splay out.\r\n* Make sure to lower yourself slowly. Try to work against gravity.\r\n\r\n3. Push yourself back up to the starting position. Press yourself upward with your arms until they are straight again, making sure not to overextend your elbows as you do. In fact, it's best if you keep your elbows slightly bent, as it makes the exercise more difficult.\r\n\r\n4. Lean forward to do a chest dip. When you're straight up and down, you work your triceps the most. To work your chest muscles more, tip your body forward and then dip up and down. However, keep your chest in the same position as you lift yourself up and down; don't try to swing forward and back.\r\n\r\n* To make the exercise harder, add a belt weight before hopping up on the bars.",
+        "source": "https://www.wikihow.com/Do-Dips",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.exercise",
+    "pk": 22,
+    "fields": {
+        "name": "Dumbbell Bench Press",
+        "description": "1. Lie back on the camping cooler or bench so that your knees touch the edge of the platform and your feet are firmly planted on the ground.\r\n\r\n2. Hold a dumbbell in each hand. The dumbbells should be lying along your body at chest level. Your palms should be facing towards your feet.\r\n\r\n3. Raise the dumbbells straight up towards the ceiling. Your elbows should be close to locking but they should not quite lock. Hold the dumbbells in the air for a moment, keeping your arms steady.\r\n\r\n4. Lower the dumbbells back to your chest and repeat these steps.",
+        "source": "https://www.wikihow.com/Work-Out-at-Home-Using-Hand-Weights",
+        "licence": 1
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 1,
+    "fields": {
+        "exercise": 1,
+        "calves": "0.3",
+        "quads": "0.7",
+        "hamstrings": "0.7",
+        "gluteus": "0.7",
+        "Hips": "0.7",
+        "lower_back": "0.8",
+        "lats": "0.0",
+        "traps": "0.5",
+        "abs": "0.5",
+        "pecs": "0.0",
+        "delts": "0.0",
+        "triceps": "0.0",
+        "biceps": "0.0",
+        "forearms": "0.3"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 2,
+    "fields": {
+        "exercise": 2,
+        "calves": "0.3",
+        "quads": "0.8",
+        "hamstrings": "0.4",
+        "gluteus": "0.7",
+        "Hips": "0.7",
+        "lower_back": "0.4",
+        "lats": "0.0",
+        "traps": "0.0",
+        "abs": "0.7",
+        "pecs": "0.0",
+        "delts": "0.0",
+        "triceps": "0.0",
+        "biceps": "0.0",
+        "forearms": "0.0"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 3,
+    "fields": {
+        "exercise": 3,
+        "calves": "0.3",
+        "quads": "0.3",
+        "hamstrings": "0.3",
+        "gluteus": "0.3",
+        "Hips": "0.3",
+        "lower_back": "0.0",
+        "lats": "0.0",
+        "traps": "0.0",
+        "abs": "0.2",
+        "pecs": "0.0",
+        "delts": "0.0",
+        "triceps": "0.0",
+        "biceps": "0.0",
+        "forearms": "0.0"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 4,
+    "fields": {
+        "exercise": 4,
+        "calves": "0.3",
+        "quads": "0.6",
+        "hamstrings": "0.3",
+        "gluteus": "0.4",
+        "Hips": "0.1",
+        "lower_back": "0.0",
+        "lats": "0.0",
+        "traps": "0.0",
+        "abs": "0.0",
+        "pecs": "0.0",
+        "delts": "0.0",
+        "triceps": "0.0",
+        "biceps": "0.0",
+        "forearms": "0.0"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 5,
+    "fields": {
+        "exercise": 5,
+        "calves": "0.0",
+        "quads": "0.0",
+        "hamstrings": "0.0",
+        "gluteus": "0.1",
+        "Hips": "0.0",
+        "lower_back": "0.1",
+        "lats": "0.0",
+        "traps": "0.1",
+        "abs": "0.3",
+        "pecs": "0.8",
+        "delts": "0.4",
+        "triceps": "0.6",
+        "biceps": "0.1",
+        "forearms": "0.1"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 6,
+    "fields": {
+        "exercise": 6,
+        "calves": "0.0",
+        "quads": "0.0",
+        "hamstrings": "0.0",
+        "gluteus": "0.1",
+        "Hips": "0.1",
+        "lower_back": "0.1",
+        "lats": "0.0",
+        "traps": "0.1",
+        "abs": "0.3",
+        "pecs": "0.6",
+        "delts": "0.5",
+        "triceps": "0.7",
+        "biceps": "0.1",
+        "forearms": "0.1"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 7,
+    "fields": {
+        "exercise": 8,
+        "calves": "0.0",
+        "quads": "0.0",
+        "hamstrings": "0.0",
+        "gluteus": "0.0",
+        "Hips": "0.0",
+        "lower_back": "0.0",
+        "lats": "0.0",
+        "traps": "0.0",
+        "abs": "1.0",
+        "pecs": "0.0",
+        "delts": "0.0",
+        "triceps": "0.0",
+        "biceps": "0.0",
+        "forearms": "0.0"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 8,
+    "fields": {
+        "exercise": 9,
+        "calves": "0.0",
+        "quads": "0.0",
+        "hamstrings": "0.0",
+        "gluteus": "0.0",
+        "Hips": "0.0",
+        "lower_back": "0.0",
+        "lats": "0.0",
+        "traps": "0.0",
+        "abs": "1.0",
+        "pecs": "0.0",
+        "delts": "0.0",
+        "triceps": "0.0",
+        "biceps": "0.0",
+        "forearms": "0.0"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 9,
+    "fields": {
+        "exercise": 10,
+        "calves": "0.0",
+        "quads": "0.1",
+        "hamstrings": "0.2",
+        "gluteus": "0.0",
+        "Hips": "0.0",
+        "lower_back": "0.0",
+        "lats": "0.0",
+        "traps": "0.0",
+        "abs": "0.7",
+        "pecs": "0.1",
+        "delts": "0.2",
+        "triceps": "0.1",
+        "biceps": "0.0",
+        "forearms": "0.0"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 10,
+    "fields": {
+        "exercise": 11,
+        "calves": "0.0",
+        "quads": "0.0",
+        "hamstrings": "0.0",
+        "gluteus": "0.1",
+        "Hips": "0.0",
+        "lower_back": "0.1",
+        "lats": "0.0",
+        "traps": "0.0",
+        "abs": "0.7",
+        "pecs": "0.0",
+        "delts": "0.2",
+        "triceps": "0.0",
+        "biceps": "0.0",
+        "forearms": "0.0"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 11,
+    "fields": {
+        "exercise": 12,
+        "calves": "0.6",
+        "quads": "0.6",
+        "hamstrings": "0.6",
+        "gluteus": "0.6",
+        "Hips": "0.5",
+        "lower_back": "0.1",
+        "lats": "0.0",
+        "traps": "0.0",
+        "abs": "0.3",
+        "pecs": "0.0",
+        "delts": "0.0",
+        "triceps": "0.0",
+        "biceps": "0.0",
+        "forearms": "0.0"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 12,
+    "fields": {
+        "exercise": 13,
+        "calves": "0.0",
+        "quads": "0.0",
+        "hamstrings": "0.0",
+        "gluteus": "0.0",
+        "Hips": "0.0",
+        "lower_back": "0.0",
+        "lats": "1.0",
+        "traps": "0.3",
+        "abs": "0.0",
+        "pecs": "0.1",
+        "delts": "0.3",
+        "triceps": "0.0",
+        "biceps": "0.5",
+        "forearms": "0.6"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 13,
+    "fields": {
+        "exercise": 14,
+        "calves": "0.2",
+        "quads": "0.9",
+        "hamstrings": "0.2",
+        "gluteus": "0.7",
+        "Hips": "0.5",
+        "lower_back": "0.2",
+        "lats": "0.0",
+        "traps": "0.1",
+        "abs": "0.2",
+        "pecs": "0.1",
+        "delts": "0.7",
+        "triceps": "0.7",
+        "biceps": "0.0",
+        "forearms": "0.1"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 14,
+    "fields": {
+        "exercise": 15,
+        "calves": "0.0",
+        "quads": "0.0",
+        "hamstrings": "0.4",
+        "gluteus": "0.4",
+        "Hips": "0.4",
+        "lower_back": "0.4",
+        "lats": "0.0",
+        "traps": "0.1",
+        "abs": "0.2",
+        "pecs": "0.0",
+        "delts": "0.0",
+        "triceps": "0.0",
+        "biceps": "0.0",
+        "forearms": "0.0"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 15,
+    "fields": {
+        "exercise": 16,
+        "calves": "0.2",
+        "quads": "0.2",
+        "hamstrings": "0.1",
+        "gluteus": "0.2",
+        "Hips": "0.2",
+        "lower_back": "0.0",
+        "lats": "0.0",
+        "traps": "0.0",
+        "abs": "0.2",
+        "pecs": "0.2",
+        "delts": "0.1",
+        "triceps": "0.2",
+        "biceps": "0.0",
+        "forearms": "0.0"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 16,
+    "fields": {
+        "exercise": 17,
+        "calves": "0.0",
+        "quads": "0.0",
+        "hamstrings": "0.0",
+        "gluteus": "0.0",
+        "Hips": "0.7",
+        "lower_back": "0.0",
+        "lats": "0.0",
+        "traps": "0.0",
+        "abs": "0.9",
+        "pecs": "0.0",
+        "delts": "0.0",
+        "triceps": "0.0",
+        "biceps": "0.0",
+        "forearms": "0.0"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 17,
+    "fields": {
+        "exercise": 18,
+        "calves": "0.0",
+        "quads": "0.0",
+        "hamstrings": "0.0",
+        "gluteus": "0.0",
+        "Hips": "0.0",
+        "lower_back": "0.0",
+        "lats": "0.0",
+        "traps": "0.1",
+        "abs": "0.0",
+        "pecs": "0.8",
+        "delts": "0.7",
+        "triceps": "0.7",
+        "biceps": "0.0",
+        "forearms": "0.0"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 18,
+    "fields": {
+        "exercise": 19,
+        "calves": "0.0",
+        "quads": "0.0",
+        "hamstrings": "0.0",
+        "gluteus": "0.0",
+        "Hips": "0.0",
+        "lower_back": "0.0",
+        "lats": "0.0",
+        "traps": "0.0",
+        "abs": "0.0",
+        "pecs": "0.7",
+        "delts": "0.4",
+        "triceps": "0.6",
+        "biceps": "0.0",
+        "forearms": "0.0"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 19,
+    "fields": {
+        "exercise": 20,
+        "calves": "0.0",
+        "quads": "0.0",
+        "hamstrings": "0.0",
+        "gluteus": "0.0",
+        "Hips": "0.0",
+        "lower_back": "0.0",
+        "lats": "0.0",
+        "traps": "0.1",
+        "abs": "0.0",
+        "pecs": "0.8",
+        "delts": "0.7",
+        "triceps": "0.6",
+        "biceps": "0.0",
+        "forearms": "0.0"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 20,
+    "fields": {
+        "exercise": 21,
+        "calves": "0.0",
+        "quads": "0.0",
+        "hamstrings": "0.0",
+        "gluteus": "0.0",
+        "Hips": "0.0",
+        "lower_back": "0.0",
+        "lats": "0.0",
+        "traps": "0.2",
+        "abs": "0.0",
+        "pecs": "0.7",
+        "delts": "0.7",
+        "triceps": "0.7",
+        "biceps": "0.0",
+        "forearms": "0.0"
+    }
+},
+{
+    "model": "workouts.musclegroupfeatures",
+    "pk": 21,
+    "fields": {
+        "exercise": 22,
+        "calves": "0.0",
+        "quads": "0.0",
+        "hamstrings": "0.0",
+        "gluteus": "0.0",
+        "Hips": "0.0",
+        "lower_back": "0.0",
+        "lats": "0.0",
+        "traps": "0.0",
+        "abs": "0.0",
+        "pecs": "0.8",
+        "delts": "0.6",
+        "triceps": "0.7",
+        "biceps": "0.0",
+        "forearms": "0.0"
+    }
+},
+{
+    "model": "workouts.performance",
+    "pk": 1,
+    "fields": {
+        "session": 2,
+        "interval": 12,
+        "performance": "2350.14"
+    }
+},
+{
+    "model": "workouts.performance",
+    "pk": 2,
+    "fields": {
+        "session": 3,
+        "interval": 12,
+        "performance": "2433.65"
+    }
+},
+{
+    "model": "workouts.performance",
+    "pk": 3,
+    "fields": {
+        "session": 4,
+        "interval": 17,
+        "performance": "50.00"
+    }
+},
+{
+    "model": "workouts.performance",
+    "pk": 4,
+    "fields": {
+        "session": 4,
+        "interval": 18,
+        "performance": "40.00"
+    }
+},
+{
+    "model": "workouts.performance",
+    "pk": 5,
+    "fields": {
+        "session": 4,
+        "interval": 19,
+        "performance": "45.00"
+    }
+},
+{
+    "model": "workouts.performance",
+    "pk": 6,
+    "fields": {
+        "session": 4,
+        "interval": 20,
+        "performance": "40.00"
+    }
+},
+{
+    "model": "workouts.performance",
+    "pk": 7,
+    "fields": {
+        "session": 5,
+        "interval": 26,
+        "performance": "57.00"
+    }
+},
+{
+    "model": "workouts.performance",
+    "pk": 8,
+    "fields": {
+        "session": 5,
+        "interval": 27,
+        "performance": "45.00"
+    }
+},
+{
+    "model": "workouts.performance",
+    "pk": 9,
+    "fields": {
+        "session": 5,
+        "interval": 28,
+        "performance": "50.00"
+    }
+},
+{
+    "model": "workouts.performance",
+    "pk": 10,
+    "fields": {
+        "session": 5,
+        "interval": 29,
+        "performance": "10.00"
+    }
+},
+{
+    "model": "workouts.performance",
+    "pk": 11,
+    "fields": {
+        "session": 5,
+        "interval": 30,
+        "performance": "50.00"
+    }
+},
+{
+    "model": "workouts.performance",
+    "pk": 12,
+    "fields": {
+        "session": 6,
+        "interval": 25,
+        "performance": "5.00"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "0m5dj8s0srnjfv56yzb2gu0dsk1l7rrq",
+    "fields": {
+        "session_data": ".eJxVjDsOwyAQBe9CHSHAfFOm9xnQwi7BSYQlY1dR7h5bcpG0b2bem0XY1hq3TkuckF2ZZJffLUF-UjsAPqDdZ57nti5T4ofCT9r5OCO9bqf7d1Ch1712XngnwSQK0jmJlkqwKMikgUQxOqsdogvZap2tL5IshFS0QhkGBZp9vte-N7E:1mlB6f:1aLlJjEvQ7xCUPoqO4iB_TbTO6Eqb4OKx_rCnUF05jc",
+        "expire_date": "2021-11-25T14:31:13.476Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "jrirb9ygqwmyvon1d5ei3vmtp1i2gf4p",
+    "fields": {
+        "session_data": ".eJxVjDsOwyAQBe9CHSHAfFOm9xnQwi7BSYQlY1dR7h5bcpG0b2bem0XY1hq3TkuckF2ZZJffLUF-UjsAPqDdZ57nti5T4ofCT9r5OCO9bqf7d1Ch1712XngnwSQK0jmJlkqwKMikgUQxOqsdogvZap2tL5IshFS0QhkGBZp9vte-N7E:1mYUAU:5TxMJlQVQHUKXMBjQfSyMknotsep94YC6brcwaWAY_I",
+        "expire_date": "2021-10-21T14:14:42.301Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "mcdbrilaeyu52lvnzyt6coqxsy9brtok",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSFMeZS6dO83EIYZpGogKe3K-O_apAvd3nPOfYkQt7WErfMSZhJnYcTpd8OYHlx3QPdYb02mVtdlRrkr8qBdXhvx83K4fwcl9vKtPSmrPZKz2YCe2CfyyvBkMiuygBpxjOQTOkbQZkyDRchgCRwy60G8P-7tOF4:1mYU9K:AOpnYMy__hoA9WxIit1ZxI4Vp50W-f6dcGv20kv-y6g",
+        "expire_date": "2021-10-21T14:13:30.891Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "seueyoigeg1jzc7s3ozxs8ghnck676g1",
+    "fields": {
+        "session_data": ".eJxVjDsOwyAQBe9CHSHAfFOm9xnQwi7BSYQlY1dR7h5bcpG0b2bem0XY1hq3TkuckF2ZZJffLUF-UjsAPqDdZ57nti5T4ofCT9r5OCO9bqf7d1Ch1712XngnwSQK0jmJlkqwKMikgUQxOqsdogvZap2tL5IshFS0QhkGBZp9vte-N7E:1mVF94:OoruoIoo5uGr3ejXbHhNQqST86snJuxWE0lg0Y5LCiA",
+        "expire_date": "2021-10-12T15:35:50.317Z"
+    }
+},
+{
+    "model": "users.user",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$6OUX9Z8XN77XcccoTxQNX1$urZrceWDcPuPf1s9Sy9RNCYFueQBZaATWmMiskRa0/U=",
+        "last_login": "2021-11-11T14:31:13Z",
+        "is_superuser": true,
+        "first_name": "James",
+        "last_name": "Example",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-09-23T12:54:49Z",
+        "username": "james@example.com",
+        "email": "james@example.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$RTeuAouaG8Ao8tbnY7RXdR$hlhdy1ZRnRfqUuHQF55eUk8BdebEcXv+z1m7XUhnFFo=",
+        "last_login": null,
+        "is_superuser": false,
+        "first_name": "S",
+        "last_name": "Briggs",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-09-27T06:58:39Z",
+        "username": "s.briggs@example.com",
+        "email": "s.briggs@example.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$qDheOQBrQhenlYPYphpjGJ$vH4IVTUSRW+/guiy7yD/H+mEauq8+/Eqg+M+TqD8MI0=",
+        "last_login": null,
+        "is_superuser": false,
+        "first_name": "A",
+        "last_name": "Boon",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-09-27T07:29:53Z",
+        "username": "a.boon@example.com",
+        "email": "a.boon@example.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$TVZvKtGeCF13V0CV1W4L6F$+CR+TeRyS1fbvQMT4H33FHiVSQZdUvetU0r72e9T/Ck=",
+        "last_login": "2021-10-07T14:13:30Z",
+        "is_superuser": true,
+        "first_name": "Chloe",
+        "last_name": "Example",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-10-07T11:26:53Z",
+        "username": "chloe@example.com",
+        "email": "chloe@example.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "workouts.session",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "s.briggs@example.com"
+        ],
+        "workout": 3,
+        "timestamp": "2015-06-05T11:00:00Z"
+    }
+},
+{
+    "model": "workouts.session",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "a.boon@example.com"
+        ],
+        "workout": 3,
+        "timestamp": "2015-06-05T11:00:00Z"
+    }
+},
+{
+    "model": "workouts.session",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "james@example.com"
+        ],
+        "workout": 4,
+        "timestamp": "2021-09-27T08:03:15Z"
+    }
+},
+{
+    "model": "workouts.session",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "james@example.com"
+        ],
+        "workout": 10,
+        "timestamp": "2021-09-28T11:25:05Z"
+    }
+},
+{
+    "model": "workouts.session",
+    "pk": 6,
+    "fields": {
+        "user": [
+            "james@example.com"
+        ],
+        "workout": 9,
+        "timestamp": "2021-10-07T10:35:27Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2021-09-23T13:00:24.500Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "interval"
+        ],
+        "object_id": "1",
+        "object_repr": "Scheme object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"High Knees X 6\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Lunge Jumps X 4\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2021-09-23T13:00:46.986Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "interval"
+        ],
+        "object_id": "2",
+        "object_repr": "Scheme object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Rest for 0:00:00\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2021-09-23T13:46:24.350Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "1",
+        "object_repr": "15 Minute HIIT Body",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"scheme\", \"object\": \"Scheme object (3)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2021-09-23T16:54:13.354Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "1",
+        "object_repr": "15 Minute HIIT Body",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2021-09-23T16:57:26.960Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "2",
+        "object_repr": "15 Minute Body HIIT",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"scheme\", \"object\": \"High Knees x 6 + Lunge Jumps x 4\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Rest for 0:00:25\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Narrow-grip Push-up x 5 + Push-up x 5\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Rest for 0:00:25\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"High Knees x 6\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Lunge Jumps x 4\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Rest for 0:00:25\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Narrow-grip Push-up x 5\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Push-up x 5\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Rest for 0:00:25\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2021-09-23T18:07:27.316Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "users",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "james@team-prior.co.uk",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2021-09-23T18:07:48.254Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "session"
+        ],
+        "object_id": "1",
+        "object_repr": "Session object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2021-09-24T06:18:20.398Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "2",
+        "object_repr": "15 Minute Body HIIT",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"scheme\", \"object\": \"Toe Touches x 5 + Full Body Crunch x 5\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Rest for 0:00:25\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Mountain Climbers x 6 + Plank Lateral Move x 2\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Rest for 0:00:25\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Toe Touches x 5\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Full Body Crunch x 5\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Rest for 0:00:25\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Mountain Climbers x 6\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Plank Lateral Move x 2\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Rest for 0:00:25\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2021-09-25T06:11:12.050Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "exercise"
+        ],
+        "object_id": "12",
+        "object_repr": "Run",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"muscle group features\", \"object\": \"Run\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2021-09-25T06:19:11.447Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "exercise"
+        ],
+        "object_id": "13",
+        "object_repr": "Pull-up",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"muscle group features\", \"object\": \"Pull-up\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2021-09-25T06:23:55.498Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "3",
+        "object_repr": "Mruph",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Run for 0:00:00\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Pull-up x 100\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Push-up x 200\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Squat x 300\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Run for 0:00:00\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Run for 0:00:00\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Pull-up x 100\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Push-up x 200\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Squat x 300\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Run for 0:00:00\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2021-09-25T07:33:06.788Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workoutstyle"
+        ],
+        "object_id": "1",
+        "object_repr": "WorkoutStyle object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2021-09-25T07:33:29.679Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workoutstyle"
+        ],
+        "object_id": "2",
+        "object_repr": "WorkoutStyle object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2021-09-25T07:34:35.668Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workoutstyle"
+        ],
+        "object_id": "3",
+        "object_repr": "WorkoutStyle object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2021-09-25T07:35:37.802Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workoutstyle"
+        ],
+        "object_id": "4",
+        "object_repr": "WorkoutStyle object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2021-09-25T07:36:15.129Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workoutstyle"
+        ],
+        "object_id": "5",
+        "object_repr": "WorkoutStyle object (5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2021-09-25T07:41:22.962Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "2",
+        "object_repr": "15 Minute Body HIIT",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2021-09-25T07:43:27.592Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "3",
+        "object_repr": "Mruph",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"name\": \"scheme\", \"object\": \"Run for 0:00:00 + Pull-up x 100 + Push-up x 200 + Squat x 300 + Run for 0:00:00\", \"fields\": [\"Style\"]}}, {\"deleted\": {\"name\": \"scheme\", \"object\": \"\"}}, {\"deleted\": {\"name\": \"scheme\", \"object\": \"\"}}, {\"deleted\": {\"name\": \"scheme\", \"object\": \"\"}}, {\"deleted\": {\"name\": \"scheme\", \"object\": \"\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Pull-up x 100\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Push-up x 200\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Squat x 300\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Run for 0:00:00\"}}, {\"deleted\": {\"name\": \"exercise scheme\", \"object\": \"Pull-up x 100\"}}, {\"deleted\": {\"name\": \"exercise scheme\", \"object\": \"Push-up x 200\"}}, {\"deleted\": {\"name\": \"exercise scheme\", \"object\": \"Squat x 300\"}}, {\"deleted\": {\"name\": \"exercise scheme\", \"object\": \"Run for 0:00:00\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2021-09-25T07:47:28.070Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "4",
+        "object_repr": "15 Minute HIIT Body",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"scheme\", \"object\": \"High Knees x 6 + Lunge Jumps x 4\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Narrow-grip Push-up x 5 + Push-up x 5\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Toe Touches x 5 + Full Body Crunch x 5\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Mountain Climbers x 6 + Plank Lateral Move x 2\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"High Knees x 6\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Lunge Jumps x 4\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Narrow-grip Push-up x 5\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Push-up x 5\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Toe Touches x 5\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Full Body Crunch x 5\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Mountain Climbers x 6\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Plank Lateral Move x 2\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2021-09-25T08:00:36.858Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "3",
+        "object_repr": "Murph",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2021-09-25T08:08:33.038Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "licence"
+        ],
+        "object_id": "3",
+        "object_repr": "Copyright Dennis Publishing Limited",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2021-09-25T08:09:57.101Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "exercise"
+        ],
+        "object_id": "14",
+        "object_repr": "Thruster",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"muscle group features\", \"object\": \"Thruster\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2021-09-25T08:13:30.711Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "5",
+        "object_repr": "Fran",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Thruster x 21 + Pull-up x 21 + Thruster x 15 + Pull-up x 15 + Thruster x 9 + Pull-up x 9\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Thruster x 21\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Pull-up x 21\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Thruster x 15\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Pull-up x 15\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Thruster x 9\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Pull-up x 9\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2021-09-25T18:08:51.738Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "3",
+        "object_repr": "Murph",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"name\": \"exercise scheme\", \"object\": \"Run for 0:00:00\", \"fields\": [\"Distance\"]}}, {\"changed\": {\"name\": \"exercise scheme\", \"object\": \"Run for 0:00:00\", \"fields\": [\"Distance\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2021-09-25T18:16:30.195Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "6",
+        "object_repr": "Cindy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Pull-up x 5 + Push-up x 10 + Squat x 15\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Pull-up x 5\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Push-up x 10\"}}, {\"added\": {\"name\": \"exercise scheme\", \"object\": \"Squat x 15\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2021-09-25T18:17:06.534Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "4",
+        "object_repr": "15 Minute HIIT Body",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"name\": \"scheme\", \"object\": \"High Knees x 6 + Lunge Jumps x 4\", \"fields\": [\"Time limit\"]}}, {\"changed\": {\"name\": \"scheme\", \"object\": \"Toe Touches x 5 + Full Body Crunch x 5\", \"fields\": [\"Time limit\"]}}, {\"changed\": {\"name\": \"scheme\", \"object\": \"Mountain Climbers x 6 + Plank Lateral Move x 2\", \"fields\": [\"Time limit\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2021-09-26T06:01:01.235Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "7",
+        "object_repr": "Chelsea",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"workout block\", \"object\": \"Pull-up x 5 + Push-up x 10 + Squat x 15\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Pull-up x 5\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Push-up x 10\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Squat x 15\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2021-09-26T06:22:18.451Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "exercise"
+        ],
+        "object_id": "15",
+        "object_repr": "Kettlebell Swing",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2021-09-26T06:24:46.703Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "exercise"
+        ],
+        "object_id": "15",
+        "object_repr": "Kettlebell Swing",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"muscle group features\", \"object\": \"Kettlebell Swing\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2021-09-26T06:28:11.865Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "8",
+        "object_repr": "Helen",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"workout block\", \"object\": \"Run for 0:00:00 + Kettlebell Swing x 21 + Pull-up x 12\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Run for 0:00:00\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Kettlebell Swing x 21\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Pull-up x 12\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2021-09-26T06:52:28.376Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "exercise"
+        ],
+        "object_id": "16",
+        "object_repr": "Burpees",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"muscle group features\", \"object\": \"Burpees\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2021-09-26T06:55:18.058Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "9",
+        "object_repr": "The Longest Mile",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"workout block\", \"object\": \"Burpees x 10 + Run for 0:00:00 + Squat x 10 + Run for 0:00:00 + Push-up x 10 + Run for 0:00:00\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Burpees x 10\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Run for 0:00:00\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Squat x 10\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Run for 0:00:00\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Push-up x 10\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Run for 0:00:00\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2021-09-26T06:59:35.150Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "exercise"
+        ],
+        "object_id": "17",
+        "object_repr": "Sit-Ups",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"muscle group features\", \"object\": \"Sit-Ups\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2021-09-26T07:00:26.951Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "9",
+        "object_repr": "The Longest Mile",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"scheme\", \"object\": \"Sit-Ups x 10\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Run for 0:00:00\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2021-09-26T07:01:13.821Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "exercise"
+        ],
+        "object_id": "14",
+        "object_repr": "Thrusters",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2021-09-26T07:01:27.841Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "exercise"
+        ],
+        "object_id": "13",
+        "object_repr": "Pull-ups",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2021-09-26T07:01:51.088Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "exercise"
+        ],
+        "object_id": "7",
+        "object_repr": "Rest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2021-09-27T06:58:39.707Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "users",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2021-09-27T06:59:01.823Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "users",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "s.briggs@example.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2021-09-27T07:00:08.934Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "session"
+        ],
+        "object_id": "2",
+        "object_repr": "Session object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2021-09-27T07:29:17.987Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "session"
+        ],
+        "object_id": "2",
+        "object_repr": "Session object (2)",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"performance\", \"object\": \"Performance object (1)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2021-09-27T07:29:54.032Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "users",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2021-09-27T07:30:12.839Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "users",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "a.boon@example.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2021-09-27T07:32:58.796Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "session"
+        ],
+        "object_id": "3",
+        "object_repr": "Session object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2021-09-27T07:35:44.140Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "session"
+        ],
+        "object_id": "3",
+        "object_repr": "Session object (3)",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"performance\", \"object\": \"Performance object (2)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2021-09-27T07:36:12.807Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "session"
+        ],
+        "object_id": "2",
+        "object_repr": "Session object (2)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Date and time the workout was completed.\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2021-09-27T08:03:16.510Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "session"
+        ],
+        "object_id": "4",
+        "object_repr": "Session object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2021-09-27T08:04:34.446Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "session"
+        ],
+        "object_id": "4",
+        "object_repr": "Session object (4)",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"performance\", \"object\": \"Performance object (3)\"}}, {\"added\": {\"name\": \"performance\", \"object\": \"Performance object (4)\"}}, {\"added\": {\"name\": \"performance\", \"object\": \"Performance object (5)\"}}, {\"added\": {\"name\": \"performance\", \"object\": \"Performance object (6)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2021-09-28T06:08:11.707Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "session"
+        ],
+        "object_id": "3",
+        "object_repr": "Session object (3)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Date and time the workout was completed.\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2021-09-28T09:27:09.408Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "3",
+        "object_repr": "Murph",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2021-09-28T09:36:33.093Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "exercise"
+        ],
+        "object_id": "18",
+        "object_repr": "Bench Press",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"muscle group features\", \"object\": \"Bench Press\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2021-09-28T09:42:50.914Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "exercise"
+        ],
+        "object_id": "19",
+        "object_repr": "Dumbbell Incline Press",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"muscle group features\", \"object\": \"Dumbbell Incline Press\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2021-09-28T09:53:55.030Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "exercise"
+        ],
+        "object_id": "18",
+        "object_repr": "Barbell Bench Press",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2021-09-28T09:55:15.450Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "exercise"
+        ],
+        "object_id": "20",
+        "object_repr": "Barbell Incline Bench Press",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"muscle group features\", \"object\": \"Barbell Incline Bench Press\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2021-09-28T09:59:35.821Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "exercise"
+        ],
+        "object_id": "21",
+        "object_repr": "Chest Dips",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"muscle group features\", \"object\": \"Chest Dips\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2021-09-28T10:08:35.098Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "exercise"
+        ],
+        "object_id": "22",
+        "object_repr": "Dumbbell Bench Press",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"muscle group features\", \"object\": \"Dumbbell Bench Press\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2021-09-28T10:11:22.096Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workoutstyle"
+        ],
+        "object_id": "6",
+        "object_repr": "Progressive Overload",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2021-09-28T10:15:39.204Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "10",
+        "object_repr": "Chest Day",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"interval\", \"object\": \"1 exercises Progressive Overload\"}}, {\"added\": {\"name\": \"interval\", \"object\": \"1 exercises Progressive Overload\"}}, {\"added\": {\"name\": \"interval\", \"object\": \"1 exercises Progressive Overload\"}}, {\"added\": {\"name\": \"interval\", \"object\": \"1 exercises Progressive Overload\"}}, {\"added\": {\"name\": \"interval\", \"object\": \"1 exercises Progressive Overload\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Barbell Bench Press x 8\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Dumbbell Incline Press x 12\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Barbell Incline Bench Press x 10\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Chest Dips x 12\"}}, {\"added\": {\"name\": \"scheme\", \"object\": \"Dumbbell Bench Press x 12\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2021-09-28T11:25:07.577Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "session"
+        ],
+        "object_id": "5",
+        "object_repr": "Session object (5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2021-09-28T11:40:07.437Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "session"
+        ],
+        "object_id": "5",
+        "object_repr": "Session object (5)",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"performance\", \"object\": \"Performance object (7)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2021-09-28T15:34:50.236Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "session"
+        ],
+        "object_id": "5",
+        "object_repr": "Session object (5)",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"performance\", \"object\": \"Performance object (8)\"}}, {\"added\": {\"name\": \"performance\", \"object\": \"Performance object (9)\"}}, {\"added\": {\"name\": \"performance\", \"object\": \"Performance object (10)\"}}, {\"added\": {\"name\": \"performance\", \"object\": \"Performance object (11)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2021-10-01T06:37:26.562Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "3",
+        "object_repr": "Murph",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2021-10-02T05:56:47.925Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workoutstyle"
+        ],
+        "object_id": "6",
+        "object_repr": "Progressive Overload",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Quantity name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2021-10-02T05:56:55.096Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workoutstyle"
+        ],
+        "object_id": "5",
+        "object_repr": "Rate Of Work",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Quantity name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2021-10-02T05:57:01.053Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workoutstyle"
+        ],
+        "object_id": "4",
+        "object_repr": "One-Rep Max",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Quantity name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2021-10-02T05:57:10.205Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workoutstyle"
+        ],
+        "object_id": "3",
+        "object_repr": "EMOM",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Quantity name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2021-10-02T05:57:15.913Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workoutstyle"
+        ],
+        "object_id": "2",
+        "object_repr": "For Time",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2021-10-02T05:57:22.454Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workoutstyle"
+        ],
+        "object_id": "1",
+        "object_repr": "AMRAP",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Quantity name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2021-10-07T10:02:38.943Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "workout"
+        ],
+        "object_id": "3",
+        "object_repr": "Murph",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2021-10-07T10:35:29.706Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "session"
+        ],
+        "object_id": "6",
+        "object_repr": "Session object (6)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2021-10-07T10:36:20.945Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "workouts",
+            "session"
+        ],
+        "object_id": "6",
+        "object_repr": "Session object (6)",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"performance\", \"object\": \"Performance object (12)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2021-10-07T11:27:41.776Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "users",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "chloe@team-prior.co.uk",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2021-10-07T11:28:12.816Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "users",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "chloe@team-prior.co.uk",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2021-10-07T13:57:43.561Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "users",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "chloe@team-prior.co.uk",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Superuser status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2021-11-11T15:18:47.733Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "users",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "chloe@example.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Username\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2021-11-11T15:19:26.811Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "users",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "james@example.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Username\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2021-11-11T15:19:41.495Z",
+        "user": [
+            "james@example.com"
+        ],
+        "content_type": [
+            "users",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "chloe@example.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Last name\"]}}]"
+    }
+}
+]

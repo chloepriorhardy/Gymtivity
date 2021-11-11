@@ -31,9 +31,11 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'nested_admin',
     'users.apps.UsersConfig',
     "dashboard.apps.DashboardConfig",
     'landing.apps.LandingConfig',
+    'workouts.apps.WorkoutsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
