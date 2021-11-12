@@ -282,6 +282,7 @@ class Scheme(SerializableModel):
 
     def serialize(self, format="python"):
         obj = super().serialize(format=format)
+        obj["exercise"] = self.exercise.serialize(format)
         # XXX: I can't remember what I was thinking with these.
         del obj["pace_one"]
         del obj["pace_two"]
