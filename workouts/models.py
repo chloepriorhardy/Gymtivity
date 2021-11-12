@@ -1,5 +1,6 @@
 from datetime import timedelta
 
+from django.core.serializers import serialize
 from django.conf import settings
 from django.core import validators
 from django.db import models
@@ -8,10 +9,10 @@ from django.utils.functional import cached_property
 
 import humanize
 
-from users.models import User
+from project.db.models import SerializableModel
 
 
-class Workout(models.Model):
+class Workout(SerializableModel):
     """The workout model.
 
     A workout is a collection of one or more schemes. A workout can be completed zero or
@@ -66,8 +67,16 @@ class Workout(models.Model):
     def __str__(self):
         return str(self.name)
 
+    def serialize(self, format="python"):
+        obj = super().serialize(format)
+        obj["exercise_count"] = self.exercise_count
+        obj["intervals"] = [
+            interval.serialize(format) for interval in self.interval_set.all()
+        ]
+        return obj
 
-class Session(models.Model):
+
+class Session(SerializableModel):
     """The session model.
 
     A session is a record of a single user completing single workout at a specific time, with
@@ -117,8 +126,16 @@ class Session(models.Model):
 
         return {"performance": performance, "quantity_name": quantity_name}
 
+    def serialize(self, format="python"):
+        obj = serialize(format, [self])[0]["fields"]
+        obj["id"] = self.pk
+        obj["user"] = self.user.serialize()
+        obj["workout"] = self.workout.serialize()
+        obj["performance"] = self.performance
+        return obj
 
-class WorkoutStyle(models.Model):
+
+class WorkoutStyle(SerializableModel):
     """The workout style model.
 
     A workout style describes the objective or measure of performance of an exercise block.
@@ -149,7 +166,7 @@ class WorkoutStyle(models.Model):
         return str(self.name)
 
 
-class Interval(models.Model):
+class Interval(SerializableModel):
     """The workout interval model.
 
     A workout interval is a collection of one or more exercise schemes with an associated workout
@@ -201,8 +218,14 @@ class Interval(models.Model):
             return f"{exercises[0]} - {self.style}"
         return f"{exercises[0]} + {exercise_count - 1} - {self.style}"
 
+    def serialize(self, format="python"):
+        obj = super().serialize(format)
+        obj["schemes"] = [scheme.serialize(format) for scheme in self.scheme_set.all()]
+        obj["style"] = self.style.serialize(format)
+        return obj
 
-class Scheme(models.Model):
+
+class Scheme(SerializableModel):
     """The scheme model.
 
     An exercise scheme defines a target number of reps, calories, distance or time limit for a
@@ -257,8 +280,16 @@ class Scheme(models.Model):
             return f"{self.distance}m {self.exercise}"
         return f"{self.exercise} for {self.scheme.time_limit}"
 
+    def serialize(self, format="python"):
+        obj = super().serialize(format=format)
+        # XXX: I can't remember what I was thinking with these.
+        del obj["pace_one"]
+        del obj["pace_two"]
+        del obj["pace_three"]
+        return obj
 
-class Licence(models.Model):
+
+class Licence(SerializableModel):
     """Exercise licence attribution.
 
     Many exercise descriptions were initially taken from Wikipedia, released under the Creative
@@ -280,7 +311,7 @@ class Licence(models.Model):
         return str(self.name)
 
 
-class Exercise(models.Model):
+class Exercise(SerializableModel):
     """The exercise model.
 
     An exercises, along with an exercise scheme (reps, sets, time limit, etc.), are combined
@@ -322,7 +353,7 @@ NormFeatureValidators = [
 ]
 
 
-class MuscleGroupFeatures(models.Model):
+class MuscleGroupFeatures(SerializableModel):
     """The muscle group model.
 
     Every exercise works one or more muscles or muscle groups. Some muscle groups are the primary
@@ -457,7 +488,7 @@ class MuscleGroupFeatures(models.Model):
         return str(self.exercise)
 
 
-class Performance(models.Model):
+class Performance(SerializableModel):
     """The workout performance model.
 
     One user can record performance for one or more workout interval per workout session.
@@ -472,7 +503,7 @@ class Performance(models.Model):
     )
 
 
-class Like(models.Model):
+class Like(SerializableModel):
     """The likes model.
 
     This is a history of explicit like and/or dislike user actions for workouts.

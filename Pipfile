@@ -11,6 +11,7 @@ humanize = "*"
 [dev-packages]
 black = "*"
 pylint = "*"
+ipython = "*"
 
 [requires]
 python_version = "3.8"
