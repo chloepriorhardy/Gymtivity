@@ -1,0 +1,26 @@
+
+/* Show it is fixed to the top */
+body {
+  padding-top: 5rem;
+}
+  
+.placeholder-img {
+  user-select: None;
+  text-anchor: middle;
+}
+
+.placeholder-img-lg {
+  font-size: 3.5rem;
+}
+
+.placeholder-img-sm {
+  font-size: 1.5rem;
+}
+
+.la-all {
+  width: 50px;
+}
+
+html {
+  font-size: 14px;
+}

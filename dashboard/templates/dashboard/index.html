@@ -1,0 +1,14 @@
+{% extends './base.html' %}
+{% block content %}
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-8 offset-2">
+        {% for session in sessions %}
+          {% include "dashboard/card.html" with session=session only %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

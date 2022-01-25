@@ -1,0 +1,7 @@
+{% load dashboard_extras %}
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{{ size }}px" height="{{ size }}px" viewBox="0 0 {{ size }} {{ size }}" version="1.1">
+  <circle fill="{{ color }}" width="{{ size }}" height="{{ size }}" cx="{{ size | div:2 }}" cy="{{ size | div:2 }}" r="{{ size | div:2 }}"/>
+  <text x="50%" y="50%" dy=".1em" font-family="Arial" fill="#ffffff" alignment-baseline="middle" text-anchor="middle" font-size="{{ size | mul:0.5 | round }}" font-weight="normal" dominant-baseline="middle">
+    {{ initial }}
+  </text>
+</svg>

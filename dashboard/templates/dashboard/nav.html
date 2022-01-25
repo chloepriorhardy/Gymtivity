@@ -1,0 +1,46 @@
+<nav class="navbar navbar-light bg-white navbar-expand-md fixed-top border-bottom">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#logo"/></svg>
+      <span class="fs-4">Gymthing</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Dashboard</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Workouts</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Goals</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Friends</a></li>
+      </ul>
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item">
+          <a href="#" class="nav-link mb-3 mb-md-0 text-dark text-decoration-none position-relative">
+            <svg class="bi bi-bell" width="24" height="24"><use xlink:href="#bell"/></svg>
+            <span class="position-absolute translate-middle badge rounded-pill bg-danger">
+              5
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {% include "dashboard/avatar.html" with initial="J" color="#468715" size=32 only %}
+            <span class="visually-hidden">My account</span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link mb-3 mb-md-0 text-dark text-decoration-none">
+            <svg class="bi bi-plus-cirlce" width="24" height="24"><use xlink:href="#plus-circle"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
