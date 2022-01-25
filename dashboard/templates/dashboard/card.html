@@ -1,0 +1,53 @@
+<div class="card mb-3 mx-xxl-4">
+  <div class="card-body">
+
+    <div class="d-flex align-items-center mb-2">
+      <div class="me-3">
+      {% include "dashboard/avatar.html" with initial=session.user.first_name.0 color="#468715" size=32 only %}
+      </div>
+      <div class="flex-fill">
+        <p class="small mb-0">{{ session.user.first_name }} {{ session.user.last_name }}</p>
+        <p class="small text-muted mb-0">{{ session.timestamp }}</p>
+      </div>
+      <div class="">
+        <svg class="bi me-2" width="50" height="50">
+          <use xlink:href="#db-shoulder-press"/>
+        </svg>
+      </div>
+    </div>
+
+    <h4 class="card-title">{{ session.workout.name }}</h4>
+    <div class="d-flex my-1">
+      <div class="d-flex flex-column flex-fill border-end">
+        <span class="small text-muted">Style</span>
+        <span class="h5">{{ session.workout.style }}</span>
+      </div>
+      <div class="d-flex flex-column flex-fill ms-2 border-end">
+        <span class="small text-muted">Exercises</span>
+        <h5>{{ session.workout.exercise_count }}</h5>
+      </div>
+      <div class="d-flex flex-column flex-fill ms-2">
+        <span class="small text-muted">{{ session.performance.quantity_name }}</span>
+        <h5>{{ session.performance.performance }}</h5>
+      </div>
+    </div>
+    <p class="card-text">
+      {{ session.workout.description }}
+      <a href="#" class="small">
+        More..
+      </a>
+    </p>
+    <div class="card-footer text-muted bg-body d-flex align-items-center justify-content-end">
+      <a href="#" class="me-2 mt-2">
+        <svg class="bi" width="24" height="24">
+          <use xlink:href="#hand-thumbs-up"/>
+        </svg>
+      </a>
+      <a href="#" class="me-2 mt-2">
+        <svg class="bi me-2" width="24" height="24">
+          <use xlink:href="#hand-thumbs-down"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>

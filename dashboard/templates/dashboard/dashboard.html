@@ -1,16 +1,162 @@
-<!DOCTYPE html>
+{% load static i18n %}
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="csrf-token" content="{{ csrf_token }}" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Dashboard Holding Page</title>
+    <title>Gymthing - Dashboard</title>
+
+    <!-- TODO: Favicons -->
+
+    <link rel="stylesheet" href="{% static 'css/lib/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'dashboard/style.css' %}">
   </head>
+
   <body>
-    <h1 class="float-md-start mb-0">
-      Holding Page for dashboard after logging in
-    </h1>
+
+    {% include "dashboard/icons.html" %}
+    {% include 'dashboard/nav.html' %}
+
+    <div class="container">
+      <div class="row">
+        <div class="col d-none d-md-block">
+          <div class="sticky-top" style="top: 5rem;">
+
+            <!-- User summary card -->
+            <div class="card mb-3">
+              <div class="card-body">
+                <h3>{{ user.first_name }} {{ user.last_name }}</h3>
+                <div class="d-flex text-center justify-content-around">
+                  <a href="#" class="d-flex flex-column flex-fill link-secondary border-end text-decoration-none">
+                    <span>Friends</span>
+                    <span>42</span>
+                  </a>
+                  <a href="#" class="d-flex flex-column flex-fill link-secondary border-end text-decoration-none">
+                    <span>Pins</span>
+                    <span>5</span>
+                  </a>
+                  <a href="#" class="d-flex flex-column flex-fill link-secondary text-decoration-none">
+                    <span>Workouts</span>
+                    <span>24</span>
+                  </a>
+                </div>
+                <hr>
+                <div>
+                  <p>Last workout</p>
+                  <p><b>Murph</b> &#183; 27 September 2021</p>
+                </div>
+                <hr>
+                <a href="#">
+                  Your workouts
+                  <svg class="bi me-2" width="16" height="16">
+                    <use xlink:href="#chevron-right"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- User progress card -->
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Progress</h5>
+                <p class="card-text">
+                  This week
+                </p>
+              </div>
+              <svg class="bi card-img-bottom" width="120" height="120">
+                <use xlink:href="#bar-chart-line-fill"/>
+              </svg>
+              <div class="card-footer bg-body">
+                <a href="#">
+                  Manage your goals
+                  <svg class="bi me-2" width="16" height="16">
+                    <use xlink:href="#chevron-right"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- middle -->
+        <div class="col-12 col-md-8 col-lg-6">
+          {% for session in sessions %}
+            {% include "dashboard/card.html" with session=session only %}
+          {% endfor %}
+        </div>
+        
+        <div class="col d-none d-lg-block">
+          <div class="sticky-top" style="top: 5rem;">
+            
+            <!-- Recommended workout card -->
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2 d-flex align-items-center">
+                  <svg class="bi ms-2" width="32" height="32"><use xlink:href="#star-man"/></svg>
+                </div>
+                <div class="col">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Recommended Workouts
+                    </h5>
+                    <p class="card-text">
+                      Try a recommended workout
+                    </p>
+                    <a href="#" class="card-link">View all recommended workouts</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Training goals card -->
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2 d-flex align-items-center">
+                  <svg class="bi ms-2" width="24" height="24"><use xlink:href="#flag"/></svg>
+                </div>
+                <div class="col">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Training Goals
+                    </h5>
+                    <p class="card-text">
+                      Set some training goals
+                    </p>
+                    <a href="#" class="card-link">Your training goals</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Competitions card -->
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2 d-flex align-items-center">
+                  <svg class="bi ms-2" width="24" height="24"><use xlink:href="#stopwatch"/></svg>
+                </div>
+                <div class="col">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Competitions
+                    </h5>
+                    <p class="card-text">
+                      Enter a competition
+                    </p>
+                    <a href="#" class="card-link">Your competitions</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="{% static 'js/lib/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'dashboard/dashboard.js' %}"></script>
+
   </body>
 </html>

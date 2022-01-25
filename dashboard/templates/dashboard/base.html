@@ -1,0 +1,27 @@
+{% load static i18n %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gymthing - Dashboard</title>
+
+    <!-- TODO: Favicons -->
+
+    <link rel="stylesheet" href="{% static 'css/lib/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'dashboard/style.css' %}">
+  </head>
+
+  <body>
+
+    {% include "dashboard/icons.html" %}
+    {% include 'dashboard/nav.html' %}
+
+    {% block content %}{% endblock %}
+
+    <script src="{% static 'js/lib/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'dashboard/dashboard.js' %}"></script>
+  </body>
+
+</html>
