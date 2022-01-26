@@ -22,6 +22,8 @@ from .forms import CustomUserCreationForm
 from .models import Friend
 from .models import User
 
+from .core import get_friends
+
 
 class RegisterView(FormView):
     template_name = "registration/register.html"
@@ -46,16 +48,14 @@ class RegisterView(FormView):
         return HttpResponseRedirect(settings.LOGIN_REDIRECT_URL)
 
 
-class FriendListView(JSONResponseMixin, LoginRequiredMixin, BaseListView):
-    context_object_name = "friends"
+class FriendListView(JSONResponseMixin, LoginRequiredMixin, View):
     raise_exception = True
 
-    def render_to_response(self, context, **response_kwargs):
-        return self.render_to_json_response(context, **response_kwargs)
+    def get(self, request, *args, **kwargs):
+        return self.render_to_json_response({})
 
-    def get_queryset(self):
-        # TODO: Pagination
-        return Friend.objects.filter(user=self.request.user.pk).all()
+    def get_data(self, context):
+        return {"data": get_friends(self.request.user.id)}
 
 
 class FriendCreateView(JSONResponseMixin, LoginRequiredMixin, View):
