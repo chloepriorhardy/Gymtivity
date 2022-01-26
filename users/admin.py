@@ -19,7 +19,13 @@ admin.site.register(User, CustomUserAdmin)
 
 
 class FriendAdmin(admin.ModelAdmin):
-    pass
+    def save_model(self, request, obj, form, change) -> None:
+        reverse_friend, created = Friend.objects.get_or_create(
+            user=obj.friend,
+            friend=obj.user,
+            timestamp=obj.timestamp,
+        )
+        return super().save_model(request, obj, form, change)
 
 
 admin.site.register(Friend, FriendAdmin)
