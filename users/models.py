@@ -107,6 +107,14 @@ class Friend(SerializableModel):
 
     timestamp = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=["user", "friend"],
+                name="unique_friend",
+            )
+        ]
+
     def __str__(self):
         return f"{self.user.username} -> {self.friend.username}"
 
