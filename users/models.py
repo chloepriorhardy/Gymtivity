@@ -81,6 +81,11 @@ class User(AbstractUser):
         del obj["is_superuser"]
         return obj
 
+    def save(self, *args, **kwargs):
+        if not self.email:
+            self.email = self.username
+        super().save(*args, **kwargs)
+
 
 class Friend(SerializableModel):
     """The friend model.
