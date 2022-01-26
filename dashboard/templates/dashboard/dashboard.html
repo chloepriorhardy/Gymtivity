@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token }}" />
 
     <title>Gymthing - Dashboard</title>
 
@@ -17,6 +18,7 @@
 
     {% include "dashboard/icons.html" %}
     {% include 'dashboard/nav.html' %}
+    {% include 'dashboard/friends.html' %}
 
     <div class="container">
       <div class="row">
@@ -57,7 +59,7 @@
             </div>
 
             <!-- User progress card -->
-            <div class="card">
+            <div class="card mb-3">
               <div class="card-body">
                 <h5 class="card-title">Progress</h5>
                 <p class="card-text">
@@ -76,6 +78,18 @@
                 </a>
               </div>
             </div>
+
+            <!-- Friends card -->
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">My Friends</h5>
+              </div>
+              <div class="card-footer bg-body">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#friendsModal">
+                  Workout with friends
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -89,6 +103,30 @@
         <div class="col d-none d-lg-block">
           <div class="sticky-top" style="top: 5rem;">
             
+            <!-- Friends card -->
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2 d-flex align-items-center">
+                  <svg class="bi ms-2" width="32" height="32"><use xlink:href="#heart"/></svg>
+                </div>
+                <div class="col">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      My Friends
+                    </h5>
+                    <p class="card-text">
+                      Workout with friends
+                    </p>
+                    <!-- <a href="#" class="card-link">View all recommended workouts</a> -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#friendsModal">
+                      My friends
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Recommended workout card -->
             <div class="card mb-3">
               <div class="row g-0">
