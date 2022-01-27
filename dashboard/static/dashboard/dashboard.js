@@ -12,6 +12,25 @@ const friendsRequest = new Request("/api/friends/", {
   headers: { "X-CSRFToken": csrf_token },
 });
 
+// Attach a callback function to the `show` event of our model dialog.
+// Every time the dialog is shown, we'll fetch a list of friends from
+// the API.
+const friendsModalEl = document.getElementById("friendsModal");
+friendsModalEl.addEventListener("show.bs.modal", function (event) {
+  fetch(friendsRequest)
+    .then((response) => {
+      if (response.status === 200) {
+        response.json().then(handleFriendData);
+      } else {
+        throw new Error("Something went wrong");
+      }
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+});
+
+
 // A helper function that creates a list group item, as a string, for a single friend
 function makeFriendListItem(friend) {
   const friendListItemT = `
@@ -41,21 +60,3 @@ function handleFriendData(data) {
     );
   });
 }
-
-// Attach a callback function to the `show` event of our model dialog.
-// Every time the dialog is shown, we'll fetch a list of friends from
-// the API.
-const friendsModalEl = document.getElementById("friendsModal");
-friendsModalEl.addEventListener("show.bs.modal", function (event) {
-  fetch(friendsRequest)
-    .then((response) => {
-      if (response.status === 200) {
-        response.json().then(handleFriendData);
-      } else {
-        throw new Error("Something went wrong on api server!");
-      }
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-});
