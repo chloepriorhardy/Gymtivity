@@ -6,6 +6,8 @@ from django.test import TestCase
 from django.urls import reverse
 
 from .models import User
+from .core import _add_friend
+from .core import _find_new_friends
 
 
 class LoginTestCase(TestCase):
@@ -88,3 +90,44 @@ class RegistrationTestCase(TestCase):
 
             self.assertEqual(response.status_code, HTTPStatus.FOUND)
             self.assertTrue(self.client.login(username=email, password=password))
+
+
+class TestGraph(TestCase):
+    def test_make_graph(self):
+        """Test that we can build a graph implemented as an adjacency list."""
+        users = [f"User{i}" for i in range(10)]
+        friends = [
+            (users[0], users[2]),
+            (users[0], users[3]),
+            (users[2], users[5]),
+        ]
+
+        graph = {}
+        for user, friend in friends:
+            _add_friend(graph, user, friend)
+
+        self.assertIn(users[2], graph[users[0]])
+        self.assertIn(users[0], graph[users[2]])
+        self.assertIn(users[3], graph[users[0]])
+        self.assertIn(users[5], graph[users[2]])
+        self.assertNotIn(users[0], graph[users[5]])
+
+    def test_find_friends(self):
+        users = [f"User{i}" for i in range(10)]
+        friends = [
+            (users[0], users[2]),
+            (users[0], users[3]),
+            (users[2], users[5]),
+        ]
+
+        graph = {}
+        for user, friend in friends:
+            _add_friend(graph, user, friend)
+
+        potential_friends = _find_new_friends(graph, users[2])
+
+        self.assertEqual(len(potential_friends), 1)
+        self.assertIn(users[3], potential_friends)
+        self.assertNotIn(users[2], potential_friends)
+        self.assertNotIn(users[5], potential_friends)
+        self.assertNotIn(users[6], potential_friends)
