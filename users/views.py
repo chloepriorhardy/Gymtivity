@@ -13,8 +13,6 @@ from django.views.decorators.debug import sensitive_post_parameters
 
 from django.views.generic import View
 from django.views.generic.edit import FormView
-from django.views.generic.list import BaseListView
-
 
 from project.views.generic import JSONResponseMixin
 
@@ -23,6 +21,7 @@ from .models import Friend
 from .models import User
 
 from .core import get_friends
+from .core import get_new_friends
 
 
 class RegisterView(FormView):
@@ -56,6 +55,16 @@ class FriendListView(JSONResponseMixin, LoginRequiredMixin, View):
 
     def get_data(self, context):
         return {"data": get_friends(self.request.user.id)}
+
+
+class MakeNewFriendsView(JSONResponseMixin, LoginRequiredMixin, View):
+    raise_exception = True
+
+    def get(self, request, *args, **kwargs):
+        return self.render_to_json_response({})
+
+    def get_data(self, context):
+        return {"data": get_new_friends(self.request.user.id)}
 
 
 class FriendCreateView(JSONResponseMixin, LoginRequiredMixin, View):
